@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1ip5myffqldn"]
+[gd_scene load_steps=3 format=3 uid="uid://b1ip5myffqldn"]
 
 [ext_resource type="Script" path="res://difficulty.gd" id="1_td6fh"]
+[ext_resource type="Texture2D" uid="uid://ce5v2qcem8nsx" path="res://assets/Farm Game Village 2 Seasons/download (1).jpg" id="2_8t05i"]
 
 [node name="Difficulty" type="Control"]
 layout_mode = 3
@@ -16,10 +17,16 @@ layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
 
+[node name="Sprite2D" type="Sprite2D" parent="Panel"]
+position = Vector2(578.083, 323.179)
+scale = Vector2(3.95805, 3.73358)
+texture = ExtResource("2_8t05i")
+
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 120.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 100
 text = "Choose Your Difficulty"
 horizontal_alignment = 1
