@@ -207,7 +207,7 @@ animations = [{
 
 [node name="Orc" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_qwicu")
-animation = &"attackOrc"
+animation = &"deathOrc"
 autoplay = "idleOrc"
-frame = 3
+frame = 6
 frame_progress = 1.0
