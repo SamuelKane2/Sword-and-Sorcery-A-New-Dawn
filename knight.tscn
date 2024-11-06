@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://notky7da410r"]
+[gd_scene load_steps=41 format=3 uid="uid://notky7da410r"]
 
 [ext_resource type="Texture2D" uid="uid://6au4qtvvcxm" path="res://assets/Farm Game Village 2 Seasons/Characters/Knight_10/Knight_10.png" id="1_nwisg"]
 
@@ -459,6 +459,18 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_cgyjq"]
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_smy7u"]
+graph_offset = Vector2(-132.817, -57.6916)
+nodes/output/position = Vector2(440, 80)
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_3aeuv"]
+states/Run/node = SubResource("AnimationNodeBlendTree_cgyjq")
+states/Run/position = Vector2(389, 150)
+states/idle/node = SubResource("AnimationNodeBlendTree_smy7u")
+states/idle/position = Vector2(352, 69)
+
 [node name="Knight" type="CharacterBody2D"]
 collision_layer = 2
 
@@ -476,3 +488,7 @@ position = Vector2(1, -8)
 sprite_frames = SubResource("SpriteFrames_a0kad")
 animation = &"idle"
 frame = 1
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_3aeuv")
+anim_player = NodePath("../AnimationPlayer")
