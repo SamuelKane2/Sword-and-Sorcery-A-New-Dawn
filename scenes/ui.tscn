@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://bc6q1d5kf0hw3"]
+
+[ext_resource type="Texture2D" uid="uid://bjsmi1wrr2hgd" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/FG_Item_Icons.png" id="1_gnjjr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1d2ki"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o67o7"]
+atlas = ExtResource("1_gnjjr")
+region = Rect2(0, 80, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ju2t0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o67o7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 210.0
+offset_bottom = 65.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1d2ki")
+
+[node name="Label" type="Label" parent="Panel"]
+offset_left = 62.0
+offset_top = 16.0
+offset_right = 102.0
+offset_bottom = 39.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel"]
+position = Vector2(30, 31)
+scale = Vector2(3.5, 3.5)
+sprite_frames = SubResource("SpriteFrames_ju2t0")
