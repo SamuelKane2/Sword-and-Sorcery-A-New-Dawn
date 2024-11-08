@@ -284,6 +284,6 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(284, 284)
+position = Vector2(280, 264)
 scale = Vector2(6.25, 6.25)
 sprite_frames = SubResource("SpriteFrames_5lb6d")
