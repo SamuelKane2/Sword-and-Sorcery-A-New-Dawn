@@ -206,9 +206,6 @@ animations = [{
 }]
 
 [node name="skeleton" type="AnimatedSprite2D"]
-position = Vector2(126, -36)
 sprite_frames = SubResource("SpriteFrames_soycg")
-animation = &"idleSkeleton"
+animation = &"movementSkeleton"
 autoplay = "idleSkeleton"
-frame_progress = 0.753492
-offset = Vector2(-126, 36)
