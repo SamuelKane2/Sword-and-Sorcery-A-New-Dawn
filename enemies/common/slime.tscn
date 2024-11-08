@@ -1,93 +1,94 @@
-[gd_scene load_steps=25 format=3 uid="uid://cv1u0o8ec1556"]
+[gd_scene load_steps=26 format=3 uid="uid://cv1u0o8ec1556"]
 
-[ext_resource type="Texture2D" uid="uid://cdm1020tva6k2" path="res://assets/RPG CHARACTERS/SLIM SS.png" id="1_r4kcd"]
+[ext_resource type="Texture2D" uid="uid://cdm1020tva6k2" path="res://assets/RPG CHARACTERS/SLIM SS.png" id="1_ukopv"]
+[ext_resource type="Script" path="res://enemies/enemiesStats.gd" id="2_ilgjx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8hhwq"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(0, 120, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mv71u"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(24, 120, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pj1ia"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(48, 120, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vo86b"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(72, 120, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lljko"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(0, 72, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tknj3"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(24, 72, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j262d"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(48, 72, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a2ju6"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(48, 96, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qmsw2"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(72, 96, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qbb3l"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(96, 96, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pavqk"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(0, 72, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mnv3c"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(24, 72, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dnm5o"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(48, 72, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lcfwc"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(0, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_li120"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(24, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oukca"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(72, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6a6p0"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(96, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_egnj6"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(0, 48, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pv6a2"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(24, 48, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q5boq"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(48, 48, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4861v"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(72, 48, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a6ptw"]
-atlas = ExtResource("1_r4kcd")
+atlas = ExtResource("1_ukopv")
 region = Rect2(96, 48, 24, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rtq6j"]
@@ -190,7 +191,7 @@ animations = [{
 [node name="Slime" type="AnimatedSprite2D"]
 scale = Vector2(0.931855, 1.12222)
 sprite_frames = SubResource("SpriteFrames_rtq6j")
-animation = &"attackSlime"
+animation = &"idleSlime"
 autoplay = "idleSlime"
-frame = 4
-frame_progress = 1.0
+frame_progress = 0.700756
+script = ExtResource("2_ilgjx")
