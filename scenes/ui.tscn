@@ -1,8 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://bc6q1d5kf0hw3"]
+[gd_scene load_steps=14 format=3 uid="uid://bc6q1d5kf0hw3"]
 
 [ext_resource type="Texture2D" uid="uid://bjsmi1wrr2hgd" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/FG_Item_Icons.png" id="1_gnjjr"]
+[ext_resource type="Texture2D" uid="uid://cxi8mdf4sddx7" path="res://assets/UI Assets/Loading Screen/Background.png" id="1_kmq0l"]
 [ext_resource type="Texture2D" uid="uid://c3xooveslabyj" path="res://assets/Misc Assets/Pixel Heart Sprite Sheet 16x16.png" id="3_irtck"]
+[ext_resource type="PackedScene" uid="uid://b2mpevactb0b6" path="res://scenes/inventory_cell.tscn" id="4_7uvrp"]
 [ext_resource type="FontFile" uid="uid://bn163an3vjm8l" path="res://assets/Misc Assets/PixelOperator8.ttf" id="4_hqd86"]
+[ext_resource type="Texture2D" uid="uid://bef31su4ubob7" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Characters/Knight_10/Knight_10_Axe_Down.png" id="5_m5du2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o67o7"]
 atlas = ExtResource("1_gnjjr")
@@ -34,6 +37,23 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5ltgm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fl77j"]
+atlas = ExtResource("5_m5du2")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5lb6d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fl77j")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="UI" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -42,25 +62,35 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(284, 300)
+scale = Vector2(0.3875, 1.13333)
+texture = ExtResource("1_kmq0l")
+
+[node name="Background2" type="Sprite2D" parent="."]
+position = Vector2(703.988, 300)
+scale = Vector2(0.900039, 1.13333)
+texture = ExtResource("1_kmq0l")
+
+[node name="Stats" type="Panel" parent="."]
 layout_mode = 0
 offset_left = -3.0
 offset_top = -3.0
 offset_right = 241.0
 offset_bottom = 48.0
 
-[node name="CoinSprite" type="AnimatedSprite2D" parent="Panel"]
+[node name="CoinSprite" type="AnimatedSprite2D" parent="Stats"]
 position = Vector2(21, 27)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_ju2t0")
 frame_progress = 0.547411
 
-[node name="HeartSprite" type="AnimatedSprite2D" parent="Panel"]
+[node name="HeartSprite" type="AnimatedSprite2D" parent="Stats"]
 position = Vector2(154, 25)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_mqwyk")
 
-[node name="CoinCounter" type="Label" parent="Panel"]
+[node name="CoinCounter" type="Label" parent="Stats"]
 layout_mode = 0
 offset_left = 40.0
 offset_top = 11.0
@@ -70,7 +100,8 @@ theme_override_fonts/font = ExtResource("4_hqd86")
 theme_override_font_sizes/font_size = 32
 text = "347"
 
-[node name="HeartCounter" type="Label" parent="Panel"]
+[node name="HeartCounter" type="Label" parent="Stats"]
+layout_mode = 0
 offset_left = 179.0
 offset_top = 12.0
 offset_right = 235.0
@@ -78,3 +109,181 @@ offset_bottom = 44.0
 theme_override_fonts/font = ExtResource("4_hqd86")
 theme_override_font_sizes/font_size = 32
 text = "20"
+
+[node name="Inventory" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 96.0
+offset_right = 992.0
+offset_bottom = 504.0
+
+[node name="Panel" type="Panel" parent="Inventory"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 16.0
+offset_right = 816.0
+offset_bottom = 416.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_5ltgm")
+
+[node name="Inventory" type="HFlowContainer" parent="Inventory/Panel"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = -8.0
+offset_right = 624.0
+offset_bottom = 408.0
+theme_override_constants/h_separation = 80
+theme_override_constants/v_separation = 80
+
+[node name="InventoryCell" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell2" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell3" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell4" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell5" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell6" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell7" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell8" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell9" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell10" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell11" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell12" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell13" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell14" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell15" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell16" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell17" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell18" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell19" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell20" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell21" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell22" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell23" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell24" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell25" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell26" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell27" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell28" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell29" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell30" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell31" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell32" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell33" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell34" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell35" parent="Inventory/Panel/Inventory" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="Armor" type="HFlowContainer" parent="Inventory"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 248.0
+offset_bottom = 80.0
+theme_override_constants/h_separation = 80
+
+[node name="InventoryCell" parent="Inventory/Armor" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell2" parent="Inventory/Armor" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell3" parent="Inventory/Armor" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="Weapons" type="HFlowContainer" parent="Inventory"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 248.0
+offset_right = 240.0
+offset_bottom = 400.0
+theme_override_constants/h_separation = 80
+theme_override_constants/v_separation = 80
+
+[node name="InventoryCell" parent="Inventory/Weapons" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell2" parent="Inventory/Weapons" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell3" parent="Inventory/Weapons" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell4" parent="Inventory/Weapons" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell5" parent="Inventory/Weapons" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="InventoryCell6" parent="Inventory/Weapons" instance=ExtResource("4_7uvrp")]
+layout_mode = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(284, 284)
+scale = Vector2(6.25, 6.25)
+sprite_frames = SubResource("SpriteFrames_5lb6d")
