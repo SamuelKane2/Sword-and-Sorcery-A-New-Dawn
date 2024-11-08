@@ -1,25 +1,50 @@
 extends CharacterBody2D
 
+const Acceleration = 800
+const Friction = 500
+const Max_Speed = 120
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+enum {Idle, Run}
+var state = Idle
 
+@onready var animationTree = $AnimationTree
+@onready var state_machine = animationTree["parameters/playback"]
 
-func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
+var blend_position : Vector2 = Vector2.ZERO
+var blend_position_paths = [
+	"parameters/idle/idle_bs2d/blend_position",
+	"parameters/run/run_bs2d/blend_position"
+]
+var animTree_state_keys = [
+	"idle",
+	"run"
+]
 
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+func _physics_process(delta):
+	move(delta)
+	animate()
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * SPEED
+func move(delta):
+	var input_vector = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	if input_vector == Vector2.ZERO:
+		state = Idle
+		apply_friction(Friction * delta)
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+		state = Run
+		apply_movement(input_vector * Acceleration * delta)
+		blend_position = input_vector
 	move_and_slide()
+
+func apply_friction(amount) -> void:
+	if velocity.length() > amount:
+		velocity -= velocity.normalized() * amount
+	else:
+		velocity = Vector2.ZERO
+
+func apply_movement(amount) -> void:
+	velocity += amount
+	velocity = velocity.limit_length(Max_Speed)
+
+func animate() -> void:
+	state_machine.travel(animTree_state_keys[state])
+	animationTree.set(blend_position_paths[state], blend_position)
