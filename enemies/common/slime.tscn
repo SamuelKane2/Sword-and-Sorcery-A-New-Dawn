@@ -193,5 +193,5 @@ scale = Vector2(0.931855, 1.12222)
 sprite_frames = SubResource("SpriteFrames_rtq6j")
 animation = &"idleSlime"
 autoplay = "idleSlime"
-frame_progress = 0.496557
+frame_progress = 0.700756
 script = ExtResource("2_ilgjx")
