@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7h8yg6kagwfv"]
+
+[ext_resource type="Texture2D" path="res://assets/UI Assets/Inventory and Stats/Inventory Cell.png" id="1_a7dpg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o64wd"]
+
+[node name="InventoryCell" type="Panel"]
+offset_right = 71.0
+offset_bottom = 71.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_o64wd")
+
+[node name="InventoryCell" type="Sprite2D" parent="."]
+position = Vector2(35.5, 35.5)
+scale = Vector2(2.21875, 2.21875)
+texture = ExtResource("1_a7dpg")
