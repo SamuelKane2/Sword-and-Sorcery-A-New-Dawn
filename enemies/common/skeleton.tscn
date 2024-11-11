@@ -1,6 +1,10 @@
 [gd_scene load_steps=29 format=3 uid="uid://c4xv8bi2kesg2"]
 
 [ext_resource type="Texture2D" uid="uid://dtvgushyyo2cl" path="res://assets/RPG CHARACTERS/SKELETON SS.png" id="1_r5f38"]
+<<<<<<< Updated upstream
+=======
+[ext_resource type="Script" path="res://enemies/enemiesStats.gd" id="2_wo0ss"]
+>>>>>>> Stashed changes
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jf3n5"]
 atlas = ExtResource("1_r5f38")
@@ -213,4 +217,8 @@ script/source = "extends AnimatedSprite2D
 sprite_frames = SubResource("SpriteFrames_soycg")
 animation = &"attackSkeleton"
 autoplay = "idleSkeleton"
+<<<<<<< Updated upstream
 script = SubResource("GDScript_odcq6")
+=======
+script = ExtResource("2_wo0ss")
+>>>>>>> Stashed changes
