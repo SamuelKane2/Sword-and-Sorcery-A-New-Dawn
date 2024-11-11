@@ -1,6 +1,10 @@
 [gd_scene load_steps=29 format=3 uid="uid://dqa6biv5ae256"]
 
 [ext_resource type="Texture2D" uid="uid://rx40jh6cmm4b" path="res://assets/RPG CHARACTERS/ORC SS.png" id="1_gbl2y"]
+<<<<<<< Updated upstream
+=======
+[ext_resource type="Script" path="res://enemies/enemiesStats.gd" id="2_18qw6"]
+>>>>>>> Stashed changes
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d45t6"]
 atlas = ExtResource("1_gbl2y")
@@ -215,4 +219,8 @@ animation = &"attackOrc"
 autoplay = "idleOrc"
 frame = 3
 frame_progress = 1.0
+<<<<<<< Updated upstream
 script = SubResource("GDScript_xc845")
+=======
+script = ExtResource("2_18qw6")
+>>>>>>> Stashed changes
