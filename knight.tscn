@@ -1,6 +1,6 @@
-[gd_scene load_steps=57 format=3 uid="uid://notky7da410r"]
+[gd_scene load_steps=57 format=3 uid="uid://2rc8kjrgrmrv"]
 
-[ext_resource type="Texture2D" uid="uid://6au4qtvvcxm" path="res://assets/Farm Game Village 2 Seasons/Characters/Knight_10/Knight_10.png" id="1_nwisg"]
+[ext_resource type="Texture2D" uid="uid://6au4qtvvcxm" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Characters/Knight_10/Knight_10.png" id="1_nwisg"]
 [ext_resource type="Script" path="res://knight.gd" id="1_xscid"]
 
 [sub_resource type="Animation" id="Animation_adr1b"]
