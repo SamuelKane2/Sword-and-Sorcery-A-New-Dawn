@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://dj4gncbw1g78h"]
+[gd_scene load_steps=51 format=3 uid="uid://cry0m666haeb"]
 
 [ext_resource type="Texture2D" uid="uid://dbkqtqxn64ogp" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Characters/Knight_11/Knight_11.png" id="1_qmkri"]
 
@@ -49,6 +49,70 @@ region = Rect2(192, 96, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_xitpn"]
 atlas = ExtResource("1_qmkri")
 region = Rect2(224, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7glu"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhmw1"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(384, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w60ds"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlscn"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(384, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wbp3h"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4xwou"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(384, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mdt30"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0murj"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(384, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xytbf"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdlki"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(384, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d3gw2"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d81ae"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(384, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xse56"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kiful"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(384, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mdp3"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ojnom"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(448, 160, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fs3us"]
 atlas = ExtResource("1_qmkri")
@@ -188,9 +252,84 @@ animations = [{
 "name": &"bkAttackUp",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e7glu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhmw1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w60ds")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mlscn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e7glu")
+}],
 "loop": true,
 "name": &"bkHurtDown",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wbp3h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4xwou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdt30")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0murj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wbp3h")
+}],
+"loop": true,
+"name": &"bkHurtLeft",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xytbf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gdlki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d3gw2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d81ae")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d3gw2")
+}],
+"loop": true,
+"name": &"bkHurtRight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xse56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kiful")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8mdp3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ojnom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8mdp3")
+}],
+"loop": false,
+"name": &"bkHurtUp",
 "speed": 5.0
 }, {
 "frames": [{
@@ -277,4 +416,4 @@ animations = [{
 [node name="Big Kinght" type="AnimatedSprite2D"]
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_nw5m7")
-animation = &"bkHurtDown"
+animation = &"bkWalkDown"
