@@ -2968,3 +2968,4 @@ tile_map_data = PackedByteArray("AAAFAAMAAAAFAA0AAAAFAAQAAAAFAA0AAAAFAAUAAAAFAA0
 tile_set = SubResource("TileSet_gjhv4")
 
 [node name="UI" parent="." instance=ExtResource("5_qfvc6")]
+script = null

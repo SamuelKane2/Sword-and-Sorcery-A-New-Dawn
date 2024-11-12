@@ -21,3 +21,9 @@ func open():
 func close():
 	visible = false
 	isOpen = false
+	
+	
+	
+	
+	
+	

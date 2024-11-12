@@ -1,9 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://d3qgq13eqiytn"]
+[gd_scene load_steps=8 format=3 uid="uid://ox07v2p8d7oe"]
 
 [ext_resource type="Script" path="res://scripts/inventory.gd" id="1_11kxo"]
-[ext_resource type="Texture2D" uid="uid://b1wwwre0cac7v" path="res://assets/Free-TDS-Game-UI-Pixel-Art/Loading Screen/Background.png" id="2_64r7e"]
+[ext_resource type="Texture2D" uid="uid://b1wwwre0cac7v" path="res://assets/UI Assets/Loading Screen/Background.png" id="2_64r7e"]
 [ext_resource type="Texture2D" uid="uid://bef31su4ubob7" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Characters/Knight_10/Knight_10_Axe_Down.png" id="3_0tnlh"]
-[ext_resource type="PackedScene" uid="uid://da4xyudm7mscn" path="res://scenes/inventory_cell.tscn" id="3_60dyn"]
+[ext_resource type="PackedScene" path="res://scenes/inventory_cell.tscn" id="3_60dyn"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jxk78"]
 
