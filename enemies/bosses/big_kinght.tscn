@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=35 format=3 uid="uid://f38mk0v2c7n8"]
-=======
-[gd_scene load_steps=35 format=3 uid="uid://dj4gncbw1g78h"]
->>>>>>> Stashed changes
+[gd_scene load_steps=51 format=3 uid="uid://cry0m666haeb"]
 
 [ext_resource type="Texture2D" uid="uid://dbkqtqxn64ogp" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Characters/Knight_11/Knight_11.png" id="1_qmkri"]
 
@@ -54,6 +50,70 @@ region = Rect2(192, 96, 32, 32)
 atlas = ExtResource("1_qmkri")
 region = Rect2(224, 96, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7glu"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhmw1"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(384, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w60ds"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlscn"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(384, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wbp3h"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4xwou"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(384, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mdt30"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0murj"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(384, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xytbf"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdlki"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(384, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d3gw2"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d81ae"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(384, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xse56"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kiful"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(384, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mdp3"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ojnom"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(448, 160, 32, 32)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_fs3us"]
 atlas = ExtResource("1_qmkri")
 region = Rect2(0, 0, 32, 32)
@@ -74,27 +134,6 @@ region = Rect2(96, 0, 32, 32)
 atlas = ExtResource("1_qmkri")
 region = Rect2(128, 0, 32, 32)
 
-<<<<<<< Updated upstream
-[sub_resource type="AtlasTexture" id="AtlasTexture_4du7f"]
-atlas = ExtResource("1_qmkri")
-region = Rect2(0, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8mn0x"]
-atlas = ExtResource("1_qmkri")
-region = Rect2(32, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fe8sy"]
-atlas = ExtResource("1_qmkri")
-region = Rect2(64, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_e7vbd"]
-atlas = ExtResource("1_qmkri")
-region = Rect2(96, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_63s2j"]
-atlas = ExtResource("1_qmkri")
-region = Rect2(128, 64, 32, 32)
-=======
 [sub_resource type="AtlasTexture" id="AtlasTexture_nyduh"]
 atlas = ExtResource("1_qmkri")
 region = Rect2(0, 32, 32, 32)
@@ -114,7 +153,6 @@ region = Rect2(96, 32, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_p5s3d"]
 atlas = ExtResource("1_qmkri")
 region = Rect2(128, 32, 32, 32)
->>>>>>> Stashed changes
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hlj7d"]
 atlas = ExtResource("1_qmkri")
@@ -216,6 +254,86 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_e7glu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhmw1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w60ds")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mlscn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e7glu")
+}],
+"loop": true,
+"name": &"bkHurtDown",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wbp3h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4xwou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdt30")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0murj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wbp3h")
+}],
+"loop": true,
+"name": &"bkHurtLeft",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xytbf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gdlki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d3gw2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d81ae")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d3gw2")
+}],
+"loop": true,
+"name": &"bkHurtRight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xse56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kiful")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8mdp3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ojnom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8mdp3")
+}],
+"loop": false,
+"name": &"bkHurtUp",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_fs3us")
 }, {
 "duration": 1.0,
@@ -236,21 +354,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-<<<<<<< Updated upstream
-"texture": SubResource("AtlasTexture_4du7f")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8mn0x")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fe8sy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_e7vbd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_63s2j")
-=======
 "texture": SubResource("AtlasTexture_nyduh")
 }, {
 "duration": 1.0,
@@ -264,7 +367,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_p5s3d")
->>>>>>> Stashed changes
 }],
 "loop": true,
 "name": &"bkWalkLeft",
@@ -314,10 +416,4 @@ animations = [{
 [node name="Big Kinght" type="AnimatedSprite2D"]
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_nw5m7")
-<<<<<<< Updated upstream
-animation = &"bkWalkUp"
-=======
-animation = &"bkAttackUp"
-frame = 2
-frame_progress = 1.0
->>>>>>> Stashed changes
+animation = &"bkWalkDown"
