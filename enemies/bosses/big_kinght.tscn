@@ -308,7 +308,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_d3gw2")
 }],
-"loop": true,
+"loop": false,
 "name": &"bkHurtRight",
 "speed": 5.0
 }, {
@@ -416,4 +416,5 @@ animations = [{
 [node name="Big Kinght" type="AnimatedSprite2D"]
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_nw5m7")
-animation = &"bkWalkDown"
+animation = &"bkWalkLeft"
+frame_progress = 0.914575
