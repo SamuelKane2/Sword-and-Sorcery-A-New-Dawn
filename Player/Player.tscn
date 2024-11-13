@@ -676,7 +676,7 @@ states/Run/node = SubResource("AnimationNodeBlendTree_grqm7")
 states/Run/position = Vector2(572, 93)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_d7l6v"), "Idle", "Move", SubResource("AnimationNodeStateMachineTransition_fs7xl"), "Move", "Idle", SubResource("AnimationNodeStateMachineTransition_40kpl"), "Idle", "Run", SubResource("AnimationNodeStateMachineTransition_j0khy"), "Run", "Idle", SubResource("AnimationNodeStateMachineTransition_kbs51"), "Move", "Run", SubResource("AnimationNodeStateMachineTransition_oh8fr"), "Run", "Move", SubResource("AnimationNodeStateMachineTransition_gwkj4")]
 
-[node name="Node2D" type="Node2D"]
+[node name="Player" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_8kd54")
