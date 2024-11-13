@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=2 format=3 uid="uid://dv4j8bo3rw4p4"]
+
+[ext_resource type="Script" path="res://scripts/inventory_item.gd" id="1_xdmty"]
+
+[resource]
+script = ExtResource("1_xdmty")
+name = "Sword"

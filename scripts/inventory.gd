@@ -22,8 +22,3 @@ func close():
 	visible = false
 	isOpen = false
 	
-	
-	
-	
-	
-	
