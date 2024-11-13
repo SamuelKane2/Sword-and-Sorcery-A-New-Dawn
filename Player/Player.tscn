@@ -1,6 +1,6 @@
 [gd_scene load_steps=68 format=3 uid="uid://csc6dxriedco1"]
 
-[ext_resource type="Script" path="res://Player/Movement.gd" id="1_8kd54"]
+[ext_resource type="Script" path="res://scripts/Movement.gd" id="1_8kd54"]
 [ext_resource type="Texture2D" uid="uid://dpmra2kld3se1" path="res://Player/player assets/tf_tallspritemz/characters/Actor1.png" id="2_8gelg"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q1c25"]
@@ -704,3 +704,6 @@ parameters/Move/TimeScale/scale = 1.0
 parameters/Move/move_blend/blend_position = Vector2(0, 0)
 parameters/Run/TimeScale/scale = 2.0
 parameters/Run/run_blend/blend_position = Vector2(0, 0)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+zoom = Vector2(3, 3)
