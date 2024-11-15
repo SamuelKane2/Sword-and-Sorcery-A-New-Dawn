@@ -1,14 +1,7 @@
-<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=3 uid="uid://b1ip5myffqldn"]
 
 [ext_resource type="Script" path="res://difficulty.gd" id="1_td6fh"]
 [ext_resource type="Texture2D" uid="uid://ce5v2qcem8nsx" path="res://assets/Farm Game Village 2 Seasons/download (1).jpg" id="2_8t05i"]
-=======
-[gd_scene load_steps=3 format=3 uid="uid://bwg6xrdg8cvea"]
-
-[ext_resource type="Script" path="res://difficulty.gd" id="1_td6fh"]
-[ext_resource type="Texture2D" path="res://assets/Farm Game Village 2 Seasons/download (1).jpg" id="2_8t05i"]
->>>>>>> Stashed changes
 
 [node name="Difficulty" type="Control"]
 layout_mode = 3
