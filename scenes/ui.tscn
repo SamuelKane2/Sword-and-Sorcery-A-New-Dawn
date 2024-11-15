@@ -1,0 +1,85 @@
+[gd_scene load_steps=9 format=3 uid="uid://bc6q1d5kf0hw3"]
+
+[ext_resource type="Texture2D" uid="uid://bjsmi1wrr2hgd" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/FG_Item_Icons.png" id="1_gnjjr"]
+[ext_resource type="Texture2D" uid="uid://c3xooveslabyj" path="res://assets/Misc Assets/Pixel Heart Sprite Sheet 16x16.png" id="3_irtck"]
+[ext_resource type="PackedScene" uid="uid://hl7uw8o2usin" path="res://scenes/Inventory/inventory.tscn" id="4_brnyl"]
+[ext_resource type="FontFile" uid="uid://bn163an3vjm8l" path="res://assets/Misc Assets/PixelOperator8.ttf" id="4_hqd86"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o67o7"]
+atlas = ExtResource("1_gnjjr")
+region = Rect2(0, 80, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ju2t0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o67o7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdbnm"]
+atlas = ExtResource("3_irtck")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mqwyk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdbnm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Stats" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -3.0
+offset_right = 241.0
+offset_bottom = 48.0
+
+[node name="CoinSprite" type="AnimatedSprite2D" parent="Stats"]
+position = Vector2(21, 27)
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_ju2t0")
+frame_progress = 0.547411
+
+[node name="HeartSprite" type="AnimatedSprite2D" parent="Stats"]
+position = Vector2(154, 25)
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_mqwyk")
+
+[node name="HeartCounter" type="Label" parent="Stats"]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 12.0
+offset_right = 235.0
+offset_bottom = 44.0
+theme_override_fonts/font = ExtResource("4_hqd86")
+theme_override_font_sizes/font_size = 32
+text = "20"
+
+[node name="CoinCounter" type="Label" parent="Stats"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 11.0
+offset_right = 124.0
+offset_bottom = 43.0
+theme_override_fonts/font = ExtResource("4_hqd86")
+theme_override_font_sizes/font_size = 32
+text = "347"
+
+[node name="Inventory" parent="." instance=ExtResource("4_brnyl")]
+layout_mode = 1
