@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://b3po638e0u214"]
+
+[ext_resource type="Script" path="res://scripts/inventory_item.gd" id="1_787qx"]
+[ext_resource type="Texture2D" uid="uid://cbm2apt8bm3pn" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/big_health_pot.png" id="2_ceqfj"]
+
+[resource]
+script = ExtResource("1_787qx")
+name = "big_health_pot"
+texture = ExtResource("2_ceqfj")
