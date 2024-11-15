@@ -61,16 +61,6 @@ position = Vector2(154, 25)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_mqwyk")
 
-[node name="CoinCounter" type="Label" parent="Stats"]
-layout_mode = 0
-offset_left = 40.0
-offset_top = 11.0
-offset_right = 124.0
-offset_bottom = 43.0
-theme_override_fonts/font = ExtResource("4_hqd86")
-theme_override_font_sizes/font_size = 32
-text = "347"
-
 [node name="HeartCounter" type="Label" parent="Stats"]
 layout_mode = 0
 offset_left = 179.0
@@ -80,6 +70,16 @@ offset_bottom = 44.0
 theme_override_fonts/font = ExtResource("4_hqd86")
 theme_override_font_sizes/font_size = 32
 text = "20"
+
+[node name="CoinCounter" type="Label" parent="Stats"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 11.0
+offset_right = 124.0
+offset_bottom = 43.0
+theme_override_fonts/font = ExtResource("4_hqd86")
+theme_override_font_sizes/font_size = 32
+text = "347"
 
 [node name="Inventory" parent="." instance=ExtResource("4_brnyl")]
 layout_mode = 1

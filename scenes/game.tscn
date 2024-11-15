@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bidal6u4fc6j0" path="res://enemies/bosses/big_kinght.tscn" id="10_gxx1p"]
 [ext_resource type="PackedScene" uid="uid://dqa6biv5ae256" path="res://enemies/common/orc.tscn" id="11_rmylb"]
 [ext_resource type="PackedScene" uid="uid://c4xv8bi2kesg2" path="res://enemies/common/skeleton.tscn" id="12_cov0s"]
+[ext_resource type="PackedScene" uid="uid://csc6dxriedco1" path="res://Player/Player.tscn" id="6_wo8ju"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cebaa"]
 texture = ExtResource("1_tqb0j")
@@ -2396,3 +2397,6 @@ position = Vector2(1344, 632)
 
 [node name="skeleton8" parent="." instance=ExtResource("12_cov0s")]
 position = Vector2(1616, 632)
+
+[node name="Player" parent="." instance=ExtResource("6_wo8ju")]
+position = Vector2(43, 236)

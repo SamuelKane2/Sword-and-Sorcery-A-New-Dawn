@@ -1,6 +1,7 @@
 [gd_scene load_steps=29 format=3 uid="uid://dqa6biv5ae256"]
 
 [ext_resource type="Texture2D" uid="uid://rx40jh6cmm4b" path="res://assets/RPG CHARACTERS/ORC SS.png" id="1_gbl2y"]
+[ext_resource type="Script" path="res://enemies/enemiesStats.gd" id="2_18qw6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d45t6"]
 atlas = ExtResource("1_gbl2y")
@@ -205,10 +206,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="GDScript" id="GDScript_xc845"]
-script/source = "extends AnimatedSprite2D
-"
-
 [node name="Orc" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_qwicu")
 animation = &"attackOrc"
@@ -216,3 +213,4 @@ autoplay = "idleOrc"
 frame = 3
 frame_progress = 1.0
 script = SubResource("GDScript_xc845")
+script = ExtResource("2_18qw6")
