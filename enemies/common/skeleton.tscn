@@ -210,5 +210,4 @@ animations = [{
 sprite_frames = SubResource("SpriteFrames_soycg")
 animation = &"attackSkeleton"
 autoplay = "idleSkeleton"
-script = SubResource("GDScript_odcq6")
 script = ExtResource("2_wo0ss")

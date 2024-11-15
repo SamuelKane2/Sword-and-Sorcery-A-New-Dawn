@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://cry0m666haeb"]
+[gd_scene load_steps=55 format=3 uid="uid://cry0m666haeb"]
 
 [ext_resource type="Texture2D" uid="uid://dbkqtqxn64ogp" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Characters/Knight_11/Knight_11.png" id="1_qmkri"]
 
@@ -153,9 +153,6 @@ region = Rect2(96, 64, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_63s2j"]
 atlas = ExtResource("1_qmkri")
 region = Rect2(128, 64, 32, 32)
-[sub_resource type="AtlasTexture" id="AtlasTexture_nyduh"]
-atlas = ExtResource("1_qmkri")
-region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bjmr4"]
 atlas = ExtResource("1_qmkri")
@@ -386,7 +383,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_63s2j")
-"texture": SubResource("AtlasTexture_nyduh")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_bjmr4")
@@ -448,8 +444,5 @@ animations = [{
 [node name="Big Kinght" type="AnimatedSprite2D"]
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_nw5m7")
-animation = &"bkAttackUp"
-frame = 2
-frame_progress = 1.0
 animation = &"bkWalkLeft"
 frame_progress = 0.914575

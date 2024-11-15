@@ -212,5 +212,4 @@ animation = &"attackOrc"
 autoplay = "idleOrc"
 frame = 3
 frame_progress = 1.0
-script = SubResource("GDScript_xc845")
 script = ExtResource("2_18qw6")
