@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://da4xyudm7mscn"]
 
-[ext_resource type="Texture2D" uid="uid://6qy3vld3x7no" path="res://assets/Free-TDS-Game-UI-Pixel-Art/Inventory and Stats/Inventory Cell.png" id="1_skfig"]
+[ext_resource type="Texture2D" uid="uid://dnl0mw8wicqje" path="res://assets/UI Assets/Inventory and Stats/Inventory Cell.png" id="1_o0ixb"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o64wd"]
 
@@ -12,4 +12,4 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_o64wd")
 [node name="InventoryCell" type="Sprite2D" parent="."]
 position = Vector2(35.5, 35.5)
 scale = Vector2(2.21875, 2.21875)
-texture = ExtResource("1_skfig")
+texture = ExtResource("1_o0ixb")

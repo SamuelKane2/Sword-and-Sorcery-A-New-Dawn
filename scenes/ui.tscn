@@ -36,7 +36,9 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="UI" type="Control"]
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="UI" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -45,25 +47,25 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_328h3")
 
-[node name="Stats" type="Panel" parent="."]
+[node name="Stats" type="Panel" parent="UI"]
 layout_mode = 0
 offset_left = -3.0
 offset_top = -3.0
 offset_right = 241.0
 offset_bottom = 48.0
 
-[node name="CoinSprite" type="AnimatedSprite2D" parent="Stats"]
+[node name="CoinSprite" type="AnimatedSprite2D" parent="UI/Stats"]
 position = Vector2(21, 27)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_ju2t0")
 frame_progress = 0.547411
 
-[node name="HeartSprite" type="AnimatedSprite2D" parent="Stats"]
+[node name="HeartSprite" type="AnimatedSprite2D" parent="UI/Stats"]
 position = Vector2(154, 25)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_mqwyk")
 
-[node name="HeartCounter" type="Label" parent="Stats"]
+[node name="HeartCounter" type="Label" parent="UI/Stats"]
 layout_mode = 0
 offset_left = 179.0
 offset_top = 12.0
@@ -73,7 +75,7 @@ theme_override_fonts/font = ExtResource("4_hqd86")
 theme_override_font_sizes/font_size = 32
 text = "20"
 
-[node name="CoinCounter" type="Label" parent="Stats"]
+[node name="CoinCounter" type="Label" parent="UI/Stats"]
 layout_mode = 0
 offset_left = 40.0
 offset_top = 11.0
@@ -83,7 +85,7 @@ theme_override_fonts/font = ExtResource("4_hqd86")
 theme_override_font_sizes/font_size = 32
 text = "347"
 
-[node name="HeartCounter2" type="Label" parent="Stats"]
+[node name="HeartCounter2" type="Label" parent="UI/Stats"]
 layout_mode = 0
 offset_left = 179.0
 offset_top = 12.0
@@ -93,6 +95,6 @@ theme_override_fonts/font = ExtResource("4_hqd86")
 theme_override_font_sizes/font_size = 32
 text = "20"
 
-[node name="Inventory" parent="." instance=ExtResource("4_brnyl")]
+[node name="Inventory" parent="UI" instance=ExtResource("4_brnyl")]
 unique_name_in_owner = true
 layout_mode = 1
