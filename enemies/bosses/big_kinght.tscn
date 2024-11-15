@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://cry0m666haeb"]
+[gd_scene load_steps=55 format=3 uid="uid://cry0m666haeb"]
 
 [ext_resource type="Texture2D" uid="uid://dbkqtqxn64ogp" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Characters/Knight_11/Knight_11.png" id="1_qmkri"]
 
@@ -134,9 +134,25 @@ region = Rect2(96, 0, 32, 32)
 atlas = ExtResource("1_qmkri")
 region = Rect2(128, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nyduh"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_4du7f"]
 atlas = ExtResource("1_qmkri")
-region = Rect2(0, 32, 32, 32)
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mn0x"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fe8sy"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7vbd"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_63s2j"]
+atlas = ExtResource("1_qmkri")
+region = Rect2(128, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bjmr4"]
 atlas = ExtResource("1_qmkri")
@@ -354,7 +370,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_nyduh")
+"texture": SubResource("AtlasTexture_4du7f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8mn0x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fe8sy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e7vbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63s2j")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_bjmr4")
