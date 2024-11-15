@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://b1ip5myffqldn"]
+[gd_scene load_steps=3 format=3 uid="uid://bb7v8jox8m1o2"]
 
 [ext_resource type="Script" path="res://difficulty.gd" id="1_td6fh"]
-[ext_resource type="Texture2D" uid="uid://ce5v2qcem8nsx" path="res://assets/Farm Game Village 2 Seasons/download (1).jpg" id="2_8t05i"]
+[ext_resource type="Texture2D" uid="uid://ce5v2qcem8nsx" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/download (1).jpg" id="2_8t05i"]
 
 [node name="Difficulty" type="Control"]
 layout_mode = 3
