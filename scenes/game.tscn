@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=4 uid="uid://o7eewyk6wtga"]
+[gd_scene load_steps=12 format=4 uid="uid://o7eewyk6wtga"]
 
 [ext_resource type="Texture2D" uid="uid://bmgd68l7a0llg" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Grounds.png" id="1_tqb0j"]
 [ext_resource type="Texture2D" uid="uid://ctle6qjilrjyy" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Village.png" id="2_hn4lr"]
 [ext_resource type="Texture2D" uid="uid://calbm1bilrgn6" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Village_Winter.png" id="3_5t03h"]
 [ext_resource type="Texture2D" uid="uid://cugem8e6v2kaa" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Extras.png" id="4_73n50"]
 [ext_resource type="PackedScene" uid="uid://bc6q1d5kf0hw3" path="res://scenes/ui.tscn" id="5_qfvc6"]
+[ext_resource type="PackedScene" uid="uid://csc6dxriedco1" path="res://Player/Player.tscn" id="6_wo8ju"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cebaa"]
 texture = ExtResource("1_tqb0j")
@@ -2968,4 +2969,6 @@ tile_map_data = PackedByteArray("AAAFAAMAAAAFAA0AAAAFAAQAAAAFAA0AAAAFAAUAAAAFAA0
 tile_set = SubResource("TileSet_gjhv4")
 
 [node name="UI" parent="." instance=ExtResource("5_qfvc6")]
-script = null
+
+[node name="Player" parent="." instance=ExtResource("6_wo8ju")]
+position = Vector2(43, 236)
