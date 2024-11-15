@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4ctfaqb1v7sb"
-path="res://.godot/imported/download.jpg-0dfcb5e3be7d48fd88adb0471f35ae97.ctex"
+path="res://.godot/imported/download.jpg-18683dc93867dfc0d8a81ef80b96194b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Farm Game Village 2 Seasons/download.jpg"
-dest_files=["res://.godot/imported/download.jpg-0dfcb5e3be7d48fd88adb0471f35ae97.ctex"]
+source_file="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/download.jpg"
+dest_files=["res://.godot/imported/download.jpg-18683dc93867dfc0d8a81ef80b96194b.ctex"]
 
 [params]
 
