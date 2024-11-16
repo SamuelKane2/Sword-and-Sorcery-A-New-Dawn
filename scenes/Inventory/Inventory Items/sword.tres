@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://dv4j8bo3rw4p4"]
 
-[ext_resource type="Script" path="res://scripts/inventory_item.gd" id="1_xdmty"]
+[ext_resource type="Script" path="res://scripts/Inventory/inventory_item.gd" id="1_xdmty"]
 [ext_resource type="Texture2D" uid="uid://ddsx3vuetcuhe" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/sword_icon.png" id="2_aj6a7"]
 
 [resource]
