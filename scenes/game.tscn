@@ -2969,6 +2969,7 @@ tile_map_data = PackedByteArray("AAAFAAMAAAAFAA0AAAAFAAQAAAAFAA0AAAAFAAUAAAAFAA0
 tile_set = SubResource("TileSet_gjhv4")
 
 [node name="UI" parent="." instance=ExtResource("5_qfvc6")]
+process_mode = 3
 
 [node name="Player" parent="." instance=ExtResource("6_wo8ju")]
 position = Vector2(43, 236)

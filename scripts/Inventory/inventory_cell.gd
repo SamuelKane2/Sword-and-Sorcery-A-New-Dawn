@@ -1,13 +1,11 @@
-extends Panel
+extends Button
 
-@onready var backgroundSprite: Sprite2D = $Background
-@onready var itemSprite: Sprite2D = $item
+@onready var background_sprite: Sprite2D = $backgroundSprite
+@onready var item_sprite: Sprite2D = $CenterContainer/Panel/itemSprite
 
 func update(item: InventoryItem):
 	if !item:
-		backgroundSprite.frame = 0
-		itemSprite.visible = false
+		item_sprite.visible = false
 	else:
-		backgroundSprite.frame = 1
-		itemSprite.visible = true
-		itemSprite.texture = item.texture
+		item_sprite.visible = true
+		item_sprite.texture = item.texture
