@@ -711,5 +711,3 @@ zoom = Vector2(3, 3)
 
 [node name="Health" type="Node" parent="."]
 script = ExtResource("3_760hd")
-max_health = null
-immortality = null
