@@ -1,6 +1,8 @@
 extends Button
 
 @onready var background_sprite: Sprite2D = $backgroundSprite
+# Should be deleted #
+#        \/         #
 @onready var item_sprite: Sprite2D = $CenterContainer/Panel/itemSprite
 
 func update(item: InventoryItem):

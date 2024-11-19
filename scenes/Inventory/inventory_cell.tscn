@@ -6,6 +6,7 @@
 [node name="InventoryCell" type="Button"]
 offset_right = 71.0
 offset_bottom = 71.0
+scale = Vector2(0.3, 0.3)
 script = ExtResource("1_b01kb")
 
 [node name="backgroundSprite" type="Sprite2D" parent="."]
@@ -17,9 +18,3 @@ texture = ExtResource("1_a7dpg")
 layout_mode = 0
 offset_right = 71.0
 offset_bottom = 71.0
-
-[node name="Panel" type="Panel" parent="CenterContainer"]
-layout_mode = 2
-
-[node name="itemSprite" type="Sprite2D" parent="CenterContainer/Panel"]
-scale = Vector2(4, 4)

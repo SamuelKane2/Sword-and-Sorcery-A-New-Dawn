@@ -173,8 +173,8 @@ scale = Vector2(0.3875, 1.13333)
 texture = ExtResource("1_wg4ec")
 
 [node name="Background2" type="Sprite2D" parent="."]
-position = Vector2(700.038, 300)
-scale = Vector2(0.88762, 1.13333)
+position = Vector2(703, 300)
+scale = Vector2(0.896876, 1.13333)
 texture = ExtResource("1_wg4ec")
 
 [node name="Inventory" type="Panel" parent="."]
@@ -190,23 +190,25 @@ offset_left = 8.0
 offset_top = 8.0
 offset_right = 248.0
 offset_bottom = 80.0
+scale = Vector2(0.93, 0.93)
 theme_override_constants/h_separation = 80
 
-[node name="InventoryCell" parent="Inventory/Armor" instance=ExtResource("2_i7yqi")]
+[node name="InventoryCell4" parent="Inventory/Armor" instance=ExtResource("2_i7yqi")]
 layout_mode = 2
 
-[node name="InventoryCell2" parent="Inventory/Armor" instance=ExtResource("2_i7yqi")]
+[node name="InventoryCell5" parent="Inventory/Armor" instance=ExtResource("2_i7yqi")]
 layout_mode = 2
 
-[node name="InventoryCell3" parent="Inventory/Armor" instance=ExtResource("2_i7yqi")]
+[node name="InventoryCell6" parent="Inventory/Armor" instance=ExtResource("2_i7yqi")]
 layout_mode = 2
 
 [node name="Weapons" type="HFlowContainer" parent="Inventory"]
 layout_mode = 0
 offset_left = 8.0
-offset_top = 328.0
+offset_top = 333.0
 offset_right = 240.0
-offset_bottom = 432.0
+offset_bottom = 437.0
+scale = Vector2(0.93, 0.93)
 theme_override_constants/h_separation = 80
 theme_override_constants/v_separation = 80
 
@@ -225,6 +227,7 @@ offset_left = 264.0
 offset_top = 8.0
 offset_right = 839.0
 offset_bottom = 417.0
+scale = Vector2(0.93, 0.93)
 theme_override_constants/h_separation = 80
 theme_override_constants/v_separation = 80
 columns = 7
