@@ -2879,7 +2879,7 @@ position = Vector2(760, -456)
 position = Vector2(752, -840)
 
 [node name="skeleton4" parent="." instance=ExtResource("12_cov0s")]
-position = Vector2(264, -88)
+position = Vector2(265, -93)
 
 [node name="skeleton5" parent="." instance=ExtResource("12_cov0s")]
 position = Vector2(944, -312)
