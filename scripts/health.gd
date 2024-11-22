@@ -7,7 +7,7 @@ signal health_changed(diff: int)
 signal health_depleted
 
 
-@export var max_health: int = 3
+@export var max_health: int = 20
 @export var immortality: bool = false : set = set_immortality, get = get_immortality
 
 var immortality_timer: Timer = null
