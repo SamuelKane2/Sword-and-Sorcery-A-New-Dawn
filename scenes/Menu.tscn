@@ -20,7 +20,7 @@ script = ExtResource("1_uxjhr")
 [node name="Sprite2D" type="Sprite2D" parent="Panel"]
 position = Vector2(577.706, 324.069)
 scale = Vector2(3.96065, 3.72335)
-texture = ExtResource("2_xwbr4")
+texture = SubResource("CompressedTexture2D_1pc5m")
 
 [node name="Title" type="Label" parent="Panel"]
 layout_mode = 0

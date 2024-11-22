@@ -1,7 +1,7 @@
-[gd_scene load_steps=29 format=3 uid="uid://c4xv8bi2kesg2"]
+[gd_scene load_steps=30 format=3 uid="uid://c4xv8bi2kesg2"]
 
+[ext_resource type="Script" path="res://enemies/common/skeleton.gd" id="1_0whxa"]
 [ext_resource type="Texture2D" uid="uid://dtvgushyyo2cl" path="res://assets/RPG CHARACTERS/SKELETON SS.png" id="1_r5f38"]
-[ext_resource type="Script" path="res://enemies/enemiesStats.gd" id="2_wo0ss"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jf3n5"]
 atlas = ExtResource("1_r5f38")
@@ -206,8 +206,18 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="skeleton" type="AnimatedSprite2D"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w5cvm"]
+radius = 8.0
+height = 18.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_0whxa")
+
+[node name="skeleton" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_soycg")
 animation = &"attackSkeleton"
 autoplay = "idleSkeleton"
-script = ExtResource("2_wo0ss")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 4)
+shape = SubResource("CapsuleShape2D_w5cvm")

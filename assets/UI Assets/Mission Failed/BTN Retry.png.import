@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmgd68l7a0llg"
-path="res://.godot/imported/FG_Grounds.png-6ef8a223f2b7481f87620eba0f487fad.ctex"
+uid="uid://deqxo7awqd0ks"
+path="res://.godot/imported/BTN Retry.png-8f5b7f0c0b2856a60654164d67b30152.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Grounds.png"
-dest_files=["res://.godot/imported/FG_Grounds.png-6ef8a223f2b7481f87620eba0f487fad.ctex"]
+source_file="res://assets/UI Assets/Mission Failed/BTN Retry.png"
+dest_files=["res://.godot/imported/BTN Retry.png-8f5b7f0c0b2856a60654164d67b30152.ctex"]
 
 [params]
 

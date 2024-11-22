@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://1f2x426qc7vd"]
+[gd_scene load_steps=3 format=3 uid="uid://dtu5vo7b7vy7h"]
 
 [ext_resource type="Script" path="res://scripts/difficulty.gd" id="1_pisq5"]
-[ext_resource type="Texture2D" uid="uid://ce5v2qcem8nsx" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/download (1).jpg" id="2_ay147"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1pc5m"]
+load_path = "res://.godot/imported/download (1).jpg-1eda6965247c8497ccf6ec0451e839c7.ctex"
 
 [node name="Difficulty" type="Control"]
 layout_mode = 3
