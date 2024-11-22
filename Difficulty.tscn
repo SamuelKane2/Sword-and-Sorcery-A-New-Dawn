@@ -1,0 +1,74 @@
+[gd_scene load_steps=3 format=3 uid="uid://cp1s00lbbmhp2"]
+
+[ext_resource type="Script" path="res://difficulty.gd" id="1_td6fh"]
+[ext_resource type="Texture2D" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/download (1).jpg" id="2_8t05i"]
+
+[node name="Difficulty" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_td6fh")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Panel"]
+position = Vector2(578.083, 323.179)
+scale = Vector2(3.95805, 3.73358)
+texture = ExtResource("2_8t05i")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "Choose Your Difficulty"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Easy" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 256.0
+offset_right = 384.0
+offset_bottom = 448.0
+theme_override_font_sizes/font_size = 75
+text = "Easy"
+
+[node name="Medium" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 416.0
+offset_top = 256.0
+offset_right = 736.0
+offset_bottom = 448.0
+theme_override_font_sizes/font_size = 75
+text = "Medium"
+
+[node name="Hard" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 256.0
+offset_right = 1088.0
+offset_bottom = 448.0
+theme_override_font_sizes/font_size = 75
+text = "Hard"
+
+[node name="Back" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 512.0
+offset_right = 192.0
+offset_bottom = 576.0
+theme_override_font_sizes/font_size = 25
+text = "Back"
+
+[connection signal="pressed" from="Panel/Easy" to="." method="_on_easy_pressed"]
+[connection signal="pressed" from="Panel/Medium" to="." method="_on_medium_pressed"]
+[connection signal="pressed" from="Panel/Hard" to="." method="_on_hard_pressed"]
+[connection signal="pressed" from="Panel/Back" to="." method="_on_back_pressed"]

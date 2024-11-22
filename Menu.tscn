@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://bocgqqp4ykmrm"]
+
+[ext_resource type="Script" path="res://Menu.gd" id="1_0elsh"]
+[ext_resource type="Texture2D" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/download (1).jpg" id="2_owhrb"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_0elsh")
+
+[node name="Sprite2D" type="Sprite2D" parent="Panel"]
+position = Vector2(577.706, 324.069)
+scale = Vector2(3.96065, 3.72335)
+texture = ExtResource("2_owhrb")
+
+[node name="Title" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 192.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 75
+text = "Sword & Sorcery: A New Dawn"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 192.0
+offset_right = 704.0
+offset_bottom = 320.0
+theme_override_font_sizes/font_size = 75
+text = "Play"
+
+[node name="QuitButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 336.0
+offset_right = 704.0
+offset_bottom = 464.0
+theme_override_font_sizes/font_size = 75
+text = "Quit"
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 528.0
+offset_top = 512.0
+offset_right = 620.0
+offset_bottom = 547.0
+theme_override_font_sizes/font_size = 25
+text = "Volume"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSlider" type="HSlider" parent="Panel"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 536.0
+offset_right = 768.0
+offset_bottom = 568.0
+
+[connection signal="pressed" from="Panel/PlayButton" to="Panel" method="_on_play_button_pressed"]
+[connection signal="pressed" from="Panel/QuitButton" to="Panel" method="_on_quit_button_pressed"]
