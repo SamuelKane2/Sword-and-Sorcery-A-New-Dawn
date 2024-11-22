@@ -1,9 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://godil56jhlo3"]
+[gd_scene load_steps=3 format=3 uid="uid://bi1bn4algh5r"]
 
 [ext_resource type="Script" path="res://scripts/Menu.gd" id="1_uxjhr"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1pc5m"]
-load_path = "res://.godot/imported/download (1).jpg-1eda6965247c8497ccf6ec0451e839c7.ctex"
+[ext_resource type="Texture2D" uid="uid://ce5v2qcem8nsx" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/download (1).jpg" id="2_xwbr4"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
