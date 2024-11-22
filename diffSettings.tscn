@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://3d2l2ky6ap3h"]
+[gd_scene load_steps=2 format=3 uid="uid://cer32lkkruybt"]
 
 [ext_resource type="Script" path="res://enemies/diffSettings.gd" id="1_6q0sk"]
 

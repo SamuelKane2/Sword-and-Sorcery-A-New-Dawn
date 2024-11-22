@@ -1,7 +1,5 @@
 extends Node
 
-var easy = false
+enum Difficulties {EASY, NORMAL, HARD}
 
-var normal = true
-
-var hard = false
+var Difficulty : Difficulties = Difficulties.NORMAL
