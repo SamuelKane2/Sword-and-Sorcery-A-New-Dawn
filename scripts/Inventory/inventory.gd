@@ -2,8 +2,9 @@ extends Control
 
 @onready var inventory: Control = %Inventory
 @onready var inventoryResource: Inventory = preload("res://scenes/Inventory/Inventory Items/playerInventory.tres")
+@onready var ItemStackClass = preload("res://scenes/Inventory/itemsStack.tscn")
 @onready var main_inventory: GridContainer = $Inventory/MainInventory
-# I have no idea, but this variable doesn't wanna work. So instead I have to do "main_inventory.get_children()" even single time. #
+# I have no idea, but this variable doesn't wanna work. So instead I have to do "main_inventory.get_children()" every single time. #
 #                   \/ 
 #var slots = main_inventory.get_children()
 
@@ -14,7 +15,14 @@ func _ready():
 
 func update():
 	for i in range(min(inventoryResource.items.size(), main_inventory.get_children().size())):
-		main_inventory.get_children()[i].update(inventoryResource.items[i])
+		var inventorySlot = inventory.main_inventory.get_children()[i]
+
+		if !inventorySlot.item: continue
+		
+		#var itemStack = main_inventory.get_children().itemStack
+		#if !itemStack:
+		#	itemStack = ItemStackClass.instantiate()
+		#	main_inventory.get_children()[i].inster(itemStack)
 
 func _input(event):
 	if event.is_action_pressed("toggle_inventory"):

@@ -2,9 +2,12 @@ extends Panel
 
 class_name ItemStack
 
-@onready var item_sprite: Sprite2D = $itemSprite
+@onready var itemSprite: Sprite2D = $item
 
 var inventorySlot
 
 func update():
 	if !inventorySlot || inventorySlot.item: return
+	
+	itemSprite.visible = true
+	itemSprite.texture = inventorySlot.item.texture

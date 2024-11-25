@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2mpevactb0b6"]
+
+[ext_resource type="Texture2D" uid="uid://dnl0mw8wicqje" path="res://assets/UI Assets/Inventory and Stats/Inventory Cell.png" id="1_a7dpg"]
+[ext_resource type="Script" path="res://scripts/Inventory/inventory_cell.gd" id="1_b01kb"]
+
+[node name="InventoryCell" type="Button"]
+offset_right = 71.0
+offset_bottom = 71.0
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_b01kb")
+
+[node name="backgroundSprite" type="Sprite2D" parent="."]
+position = Vector2(35.5, 35.5)
+scale = Vector2(2.21875, 2.21875)
+texture = ExtResource("1_a7dpg")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_right = 71.0
+offset_bottom = 71.0
