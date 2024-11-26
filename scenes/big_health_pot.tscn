@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ffvykyixix82"]
+
+[ext_resource type="Texture2D" uid="uid://cbm2apt8bm3pn" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/big_health_pot.png" id="1_hiv4m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4vkj7"]
+size = Vector2(8, 11)
+
+[node name="BigHealthPot" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_4vkj7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hiv4m")
