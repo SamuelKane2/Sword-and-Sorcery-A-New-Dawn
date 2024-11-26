@@ -11,21 +11,21 @@ extends Control
 func _ready():
 	connectSlots()
 	inventory.close()
-	update()
+	#update()
 
-func update():
-	for i in range(min(inventoryResource.items.size(), main_inventory.get_children().size())):
-		var inventorySlot = inventory.main_inventory.get_children()[i]
+#func update():
+	#for i in range(min(inventoryResource.items.size(), main_inventory.get_children().size())):
+		#var inventorySlot = inventory.main_inventory.get_children()[i]
 
-		if !inventorySlot.item: continue
+		#if !inventorySlot.item: continue
 		
-		var itemStack = main_inventory.get_children().itemStack
-		if !itemStack:
-			itemStack = ItemStackClass.instantiate()
-			main_inventory.get_children()[i].inster(itemStack)
-			
-			itemStack.inventorySlot = inventorySlot
-			itemStack.update()
+		#var itemStack = main_inventory.get_children().itemStack
+		#if !itemStack:
+		#	itemStack = ItemStackClass.instantiate()
+		#	main_inventory.get_children()[i].inster(itemStack)
+		#	
+		#	itemStack.inventorySlot = inventorySlot
+		#	itemStack.update()
 
 func _input(event):
 	if event.is_action_pressed("toggle_inventory"):
