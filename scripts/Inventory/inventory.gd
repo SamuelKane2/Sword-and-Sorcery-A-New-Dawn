@@ -19,10 +19,13 @@ func update():
 
 		if !inventorySlot.item: continue
 		
-		#var itemStack = main_inventory.get_children().itemStack
-		#if !itemStack:
-		#	itemStack = ItemStackClass.instantiate()
-		#	main_inventory.get_children()[i].inster(itemStack)
+		var itemStack = main_inventory.get_children().itemStack
+		if !itemStack:
+			itemStack = ItemStackClass.instantiate()
+			main_inventory.get_children()[i].inster(itemStack)
+			
+			itemStack.inventorySlot = inventorySlot
+			itemStack.update()
 
 func _input(event):
 	if event.is_action_pressed("toggle_inventory"):
