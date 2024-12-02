@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Inventory" load_steps=7 format=3 uid="uid://bnu2h065ropgh"]
 
 [ext_resource type="Script" path="res://scripts/Inventory/inventory_item.gd" id="1_7et8e"]
-[ext_resource type="Resource" uid="uid://3uk76tvf4xca" path="res://scenes/Inventory/Inventory Items/big_blue_pot.tres" id="2_7ma65"]
-[ext_resource type="Resource" uid="uid://dvc3632ue7fkb" path="res://scenes/Inventory/Inventory Items/small_health_pot.tres" id="3_u0fsh"]
-[ext_resource type="Resource" uid="uid://dv4j8bo3rw4p4" path="res://scenes/Inventory/Inventory Items/sword.tres" id="4_pdh2j"]
-[ext_resource type="Resource" uid="uid://b3po638e0u214" path="res://scenes/Inventory/Inventory Items/big_health_pot.tres" id="5_gi652"]
+[ext_resource type="Resource" uid="uid://3uk76tvf4xca" path="res://scenes/Inventory/Inventory Items/Resources/big_blue_pot.tres" id="2_7ma65"]
+[ext_resource type="Resource" uid="uid://dvc3632ue7fkb" path="res://scenes/Inventory/Inventory Items/Resources/small_health_pot.tres" id="3_u0fsh"]
+[ext_resource type="Resource" uid="uid://dv4j8bo3rw4p4" path="res://scenes/Inventory/Inventory Items/Resources/sword.tres" id="4_pdh2j"]
+[ext_resource type="Resource" uid="uid://b3po638e0u214" path="res://scenes/Inventory/Inventory Items/Resources/big_health_pot.tres" id="5_gi652"]
 [ext_resource type="Script" path="res://scripts/Inventory/inventory_resource.gd" id="5_r38cl"]
 
 [resource]
