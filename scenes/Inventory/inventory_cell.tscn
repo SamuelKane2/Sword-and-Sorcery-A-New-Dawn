@@ -18,3 +18,5 @@ texture = ExtResource("1_a7dpg")
 layout_mode = 0
 offset_right = 71.0
 offset_bottom = 71.0
+
+[node name="itemSprite" type="Sprite2D" parent="."]
