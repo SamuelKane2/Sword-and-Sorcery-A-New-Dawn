@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://2b6iwa51ghon"]
 
-[ext_resource type="Script" path="res://scenes/Inventory/Inventory Items/Scenes/sword.gd" id="1_6elft"]
+[ext_resource type="Script" path="res://scripts/Inventory/sword.gd" id="1_6elft"]
 [ext_resource type="Texture2D" uid="uid://ddsx3vuetcuhe" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/sword_icon.png" id="1_li4tk"]
 [ext_resource type="Resource" uid="uid://dv4j8bo3rw4p4" path="res://scenes/Inventory/Inventory Items/Resources/sword.tres" id="2_7d40o"]
 

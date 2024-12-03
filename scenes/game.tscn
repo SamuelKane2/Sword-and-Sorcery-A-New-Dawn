@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://o7eewyk6wtga"]
+[gd_scene load_steps=16 format=4 uid="uid://o7eewyk6wtga"]
 
 [ext_resource type="Texture2D" uid="uid://bmgd68l7a0llg" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Grounds.png" id="1_tqb0j"]
 [ext_resource type="Texture2D" uid="uid://ctle6qjilrjyy" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Village.png" id="2_hn4lr"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://ffvykyixix82" path="res://scenes/Inventory/Inventory Items/Scenes/big_health_pot.tscn" id="7_na0ga"]
 [ext_resource type="PackedScene" uid="uid://c20f157kqvg6n" path="res://scenes/Inventory/Inventory Items/Scenes/big_blue_pot.tscn" id="8_cjht4"]
 [ext_resource type="PackedScene" uid="uid://g4ibykxc72lc" path="res://scenes/Inventory/Inventory Items/Scenes/small_blue_pot.tscn" id="9_3br4h"]
+[ext_resource type="PackedScene" uid="uid://vscka4p4erhn" path="res://scenes/Inventory/Inventory Items/Scenes/small_health_pot.tscn" id="10_k1wxf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cebaa"]
 texture = ExtResource("1_tqb0j")
@@ -2985,3 +2986,6 @@ position = Vector2(15, 135)
 
 [node name="SmallBluePot" parent="." instance=ExtResource("9_3br4h")]
 position = Vector2(-1, 201)
+
+[node name="SmallHealthPot" parent="." instance=ExtResource("10_k1wxf")]
+position = Vector2(98, 183)

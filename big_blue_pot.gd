@@ -1,6 +1,5 @@
-extends Area2D
-
-@export var itemRes: InventoryItem
+extends collect
 
 func _on_body_entered(body: Node2D) -> void:
-	queue_free()
+	collect()
+	print("blueBottle")

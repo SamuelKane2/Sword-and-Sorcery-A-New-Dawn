@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2mpevactb0b6"]
+[gd_scene load_steps=4 format=3 uid="uid://b2mpevactb0b6"]
 
 [ext_resource type="Texture2D" uid="uid://dnl0mw8wicqje" path="res://assets/UI Assets/Inventory and Stats/Inventory Cell.png" id="1_a7dpg"]
 [ext_resource type="Script" path="res://scripts/Inventory/inventory_cell.gd" id="1_b01kb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6soue"]
 
 [node name="InventoryCell" type="Button"]
 offset_right = 71.0
@@ -19,4 +21,10 @@ layout_mode = 0
 offset_right = 71.0
 offset_bottom = 71.0
 
-[node name="itemSprite" type="Sprite2D" parent="."]
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6soue")
+
+[node name="itemSprite" type="Sprite2D" parent="CenterContainer"]
+position = Vector2(35, 35)
+scale = Vector2(4, 4)

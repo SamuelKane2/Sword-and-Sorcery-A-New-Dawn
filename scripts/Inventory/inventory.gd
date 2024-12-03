@@ -9,13 +9,13 @@ extends Control
 #var slots = main_inventory.get_children()
 
 func _ready():
-	connectSlots()
+	#connectSlots()
 	inventory.close()
 	update()
 
 func update():
 	for i in range(min(inventoryResource.items.size(), main_inventory.get_children().size())):
-		main_inventory.get_children()[i].update(inventory.items[i])
+		main_inventory.get_children()[i].update(inventoryResource.items[i])
 		
 #		var inventorySlot = inventory.main_inventory.get_children()[i]
 #

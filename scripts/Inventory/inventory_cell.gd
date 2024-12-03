@@ -2,7 +2,7 @@ extends Button
 
 @onready var background_sprite: Sprite2D = $backgroundSprite
 @onready var center_container: CenterContainer = $CenterContainer
-@onready var item_sprite: Sprite2D = $itemSprite
+@onready var item_sprite: Sprite2D = $CenterContainer/itemSprite
 
 var itemStackGui: ItemStack
 

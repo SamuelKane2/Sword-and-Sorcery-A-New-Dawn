@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c20f157kqvg6n"]
 
-[ext_resource type="Script" path="res://big_blue_pot.gd" id="1_b78qu"]
+[ext_resource type="Script" path="res://scripts/Inventory/big_blue_pot.gd" id="1_vjth2"]
 [ext_resource type="Resource" uid="uid://3uk76tvf4xca" path="res://scenes/Inventory/Inventory Items/Resources/big_blue_pot.tres" id="2_i5hx6"]
 [ext_resource type="Texture2D" uid="uid://cmmlk0dk31pi2" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/big_blue_pot.png" id="2_j67x4"]
 
@@ -9,7 +9,7 @@ size = Vector2(8, 11.3333)
 
 [node name="BigBluePot" type="Area2D"]
 scale = Vector2(1.5, 1.5)
-script = ExtResource("1_b78qu")
+script = ExtResource("1_vjth2")
 itemRes = ExtResource("2_i5hx6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
