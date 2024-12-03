@@ -1,0 +1,32 @@
+
+
+if global.given_npc_item == false
+	NobleMan: [[Hi|Hello|Howdy]]... how may I help?
+	- Who are you?
+		NobleMan: I'm just... a nobody, nothing more
+		NobleMan: A nobody in need of potions lol
+		- I think I have something for you.
+			NobleMan: oh.. really?
+			- yes, found something with your name on it
+				if global.found_npc_item == true
+					NobleMan: Ahhh. A potion, I must have dropped it, thank you so much!
+					global.given_npc_item == true
+					=> END
+		- no, I lied => END
+	- goodbye. => END
+	- I think I have something for you.
+		NobleMan: oh.. really?
+		- yes, found something with your name on it
+			if global.found_npc_item == true
+				NobleMan: Ahhh. A potion, I must have dropped it, thank you so much!
+				global.given_npc_item == true
+				=> END
+		- no, I lied => END
+	- goodbye. => END
+else:
+	NobleMan: [[Hi|Hello|Howdy]], thank you so much for finding my potion
+	NobleMan: I don't know what I would've done without you.
+	NobleMan: I am working on a massive project for the town!
+	=> END
+
+=> END
