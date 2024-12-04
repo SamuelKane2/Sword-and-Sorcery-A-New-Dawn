@@ -89,3 +89,10 @@ func animate() -> void:
 
 # Player Inventory #
 @export var inventory: Inventory
+
+# Collect items #
+func _on_area_2d_body_entered(area) -> void:
+	print("Collision")
+	if area.has_method("collect"):
+		print("Collision method")
+		area.collet()

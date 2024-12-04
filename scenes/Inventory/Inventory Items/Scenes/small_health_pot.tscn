@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://vscka4p4erhn"]
 
-[ext_resource type="Script" path="res://small_health_pot.gd" id="1_hvheo"]
+[ext_resource type="Script" path="res://scripts/Inventory/small_health_pot.gd" id="1_hvheo"]
 [ext_resource type="Resource" uid="uid://dvc3632ue7fkb" path="res://scenes/Inventory/Inventory Items/Resources/small_health_pot.tres" id="2_huhpf"]
 [ext_resource type="Texture2D" uid="uid://b77spdlfq6ihq" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/small_health_pot.png" id="2_vbev7"]
 

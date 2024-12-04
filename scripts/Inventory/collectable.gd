@@ -4,6 +4,6 @@ class_name collect
 
 @export var itemRes: InventoryItem
 
-func collect():
-	#inventory.insert(itemRes)
+func collect(inventory: Inventory):
+	inventory.insert(itemRes)
 	queue_free()
