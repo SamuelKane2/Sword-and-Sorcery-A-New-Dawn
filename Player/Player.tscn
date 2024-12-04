@@ -1,6 +1,7 @@
-[gd_scene load_steps=69 format=3 uid="uid://csc6dxriedco1"]
+[gd_scene load_steps=70 format=3 uid="uid://csc6dxriedco1"]
 
 [ext_resource type="Script" path="res://scripts/Movement.gd" id="1_8kd54"]
+[ext_resource type="Script" path="res://Player/player.gd" id="1_bpnpc"]
 [ext_resource type="Texture2D" uid="uid://dpmra2kld3se1" path="res://Player/player assets/tf_tallspritemz/characters/Actor1.png" id="2_8gelg"]
 [ext_resource type="Script" path="res://scripts/health.gd" id="3_760hd"]
 
@@ -678,6 +679,7 @@ states/Run/position = Vector2(572, 93)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_d7l6v"), "Idle", "Move", SubResource("AnimationNodeStateMachineTransition_fs7xl"), "Move", "Idle", SubResource("AnimationNodeStateMachineTransition_40kpl"), "Idle", "Run", SubResource("AnimationNodeStateMachineTransition_j0khy"), "Run", "Idle", SubResource("AnimationNodeStateMachineTransition_kbs51"), "Move", "Run", SubResource("AnimationNodeStateMachineTransition_oh8fr"), "Run", "Move", SubResource("AnimationNodeStateMachineTransition_gwkj4")]
 
 [node name="Player" type="Node2D"]
+script = ExtResource("1_bpnpc")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_8kd54")
