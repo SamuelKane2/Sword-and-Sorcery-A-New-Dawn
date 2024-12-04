@@ -86,3 +86,4 @@ func animate() -> void:
 
 	# You can add debugging here to make sure blend_position is updating
 	print("Blend Position: ", blend_position)
+	

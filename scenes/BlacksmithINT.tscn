@@ -1,10 +1,11 @@
-[gd_scene load_steps=18 format=4 uid="uid://b47hpryva0yw8"]
+[gd_scene load_steps=14 format=4 uid="uid://cxgpnb8nbc5h7"]
 
 [ext_resource type="Texture2D" uid="uid://ctle6qjilrjyy" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Village.png" id="1_y2sxh"]
 [ext_resource type="Texture2D" uid="uid://dqq60t3o1dakp" path="res://assets/sp-removebg-preview.png" id="2_df3nb"]
 [ext_resource type="Texture2D" uid="uid://bx0qgwb623muj" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/RPG Maker/RPG Maker MV/tilesets/FG_Village_D.png" id="3_ycx74"]
 [ext_resource type="Texture2D" uid="uid://7yb4adju0rms" path="res://assets/spriteSheetAnvil-removebg-preview.png" id="4_4q708"]
 [ext_resource type="PackedScene" uid="uid://csc6dxriedco1" path="res://Player/Player.tscn" id="5_78r8j"]
+[ext_resource type="Script" path="res://scenes/exit.gd" id="6_s8xlh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a00bd"]
 texture = ExtResource("1_y2sxh")
@@ -3319,23 +3320,8 @@ sources/1 = SubResource("TileSetAtlasSource_pbqu5")
 sources/0 = SubResource("TileSetAtlasSource_01n5e")
 sources/2 = SubResource("TileSetAtlasSource_q7qrp")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8atef"]
-size = Vector2(7, 160)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_j7tfb"]
-size = Vector2(9.5, 160)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gwwm2"]
-size = Vector2(16, 32)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4v44t"]
-size = Vector2(192, 8)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_sjq24"]
-size = Vector2(80, 3.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0qmpl"]
-size = Vector2(80, 5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4w2fa"]
+size = Vector2(32, 16)
 
 [node name="Node2D" type="Node2D"]
 
@@ -3349,47 +3335,26 @@ tile_map_data = PackedByteArray("AAADAA0AAAAEAAYAAAAEAA0AAAAFAAYAAAADAAwAAAAEAAU
 tile_set = SubResource("TileSet_q5y0l")
 
 [node name="Player" parent="." instance=ExtResource("5_78r8j")]
-position = Vector2(132, 218)
-scale = Vector2(0.75, 0.75)
+position = Vector2(126, 200)
+scale = Vector2(0.6, 0.6)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(60, 168, 99, 168, 99, 176, 95, 176, 95, 178, 89, 178, 89, 186, 91, 186, 91, 188, 93, 188, 93, 193, 68, 193, 68, 188, 70, 188, 70, 186, 72, 186, 72, 178, 66, 178, 66, 176, 64, 176, 64, 174, 62, 174, 62, 172, 60, 172)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D2"]
+position = Vector2(0, -1)
+polygon = PackedVector2Array(96, 270, 173, 270, 173, 116, -13, 115, -13, 270, 64, 270, 64, 273, -16, 273, -16, 113, 176, 113, 176, 273, 96, 273)
 
 [node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("6_s8xlh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-3, 192)
-shape = SubResource("RectangleShape2D_8atef")
-
-[node name="Area2D2" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2(165, 192)
-shape = SubResource("RectangleShape2D_j7tfb")
-
-[node name="Area2D3" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
 position = Vector2(80, 264)
-rotation = 1.5708
-shape = SubResource("RectangleShape2D_gwwm2")
+shape = SubResource("RectangleShape2D_4w2fa")
+script = ExtResource("6_s8xlh")
 
-[node name="Area2D4" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
-position = Vector2(80, 124)
-shape = SubResource("RectangleShape2D_4v44t")
-
-[node name="Area2D5" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
-position = Vector2(136, 257.25)
-shape = SubResource("RectangleShape2D_sjq24")
-
-[node name="Area2D6" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6"]
-position = Vector2(24, 258)
-shape = SubResource("RectangleShape2D_0qmpl")
-
-[node name="Area2D7" type="Area2D" parent="."]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D7"]
-polygon = PackedVector2Array(60, 168, 99, 168, 99, 176, 95, 176, 95, 178, 89, 178, 89, 186, 91, 186, 91, 188, 93, 188, 93, 193, 68, 193, 68, 188, 70, 188, 70, 186, 72, 186, 72, 178, 66, 178, 66, 176, 64, 176, 64, 174, 62, 174, 62, 172, 60, 172)
+[connection signal="body_entered" from="Area2D" to="Area2D/CollisionShape2D" method="_on_area_2d_body_entered"]
