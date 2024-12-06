@@ -1,9 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dtu5vo7b7vy7h"]
+[gd_scene load_steps=3 format=3 uid="uid://cp1s00lbbmhp2"]
 
-[ext_resource type="Script" path="res://scripts/difficulty.gd" id="1_pisq5"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1pc5m"]
-load_path = "res://.godot/imported/download (1).jpg-1eda6965247c8497ccf6ec0451e839c7.ctex"
+[ext_resource type="Script" path="res://scripts/difficulty.gd" id="1_4exbp"]
+[ext_resource type="Texture2D" uid="uid://ce5v2qcem8nsx" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/download (1).jpg" id="2_8t05i"]
 
 [node name="Difficulty" type="Control"]
 layout_mode = 3
@@ -12,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_pisq5")
+script = ExtResource("1_4exbp")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
@@ -22,7 +20,7 @@ offset_bottom = 648.0
 [node name="Sprite2D" type="Sprite2D" parent="Panel"]
 position = Vector2(578.083, 323.179)
 scale = Vector2(3.95805, 3.73358)
-texture = ExtResource("2_ay147")
+texture = ExtResource("2_8t05i")
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
