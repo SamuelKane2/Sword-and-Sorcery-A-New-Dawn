@@ -1,6 +1,14 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=2 format=3 uid="uid://b7gutni0u5gg1"]
 
 [ext_resource type="Script" path="res://test.gd" id="1_3c0ja"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+=======
+[gd_scene load_steps=2 format=3 uid="uid://lmrtml0gr0ba"]
+
+[ext_resource type="Script" path="res://test.gd" id="1_3c0ja"]
+
+[node name="CharacterBody2D2" type="CharacterBody2D"]
+>>>>>>> Stashed changes
 script = ExtResource("1_3c0ja")
