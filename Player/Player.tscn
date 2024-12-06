@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=3 uid="uid://csc6dxriedco1"]
+[gd_scene load_steps=68 format=3 uid="uid://csc6dxriedco1"]
 
 [ext_resource type="Script" path="res://scripts/Movement.gd" id="1_8kd54"]
 [ext_resource type="Texture2D" uid="uid://dpmra2kld3se1" path="res://Player/player assets/tf_tallspritemz/characters/Actor1.png" id="2_8gelg"]
@@ -736,6 +736,9 @@ shape = SubResource("CapsuleShape2D_vnqrk")
 [node name="attack_cooldown" type="Timer" parent="."]
 wait_time = 3.0
 
+[node name="Health" type="Node" parent="."]
+script = ExtResource("3_760hd")
+
 [connection signal="body_entered" from="Attract" to="." method="_on_Attract_body_entered"]
 [connection signal="body_exited" from="Attract" to="." method="_on_Attract_body_exited"]
 [connection signal="body_entered" from="Attack" to="." method="_on_Attack_body_entered"]
@@ -743,5 +746,3 @@ wait_time = 3.0
 [connection signal="timeout" from="Regen_Timer" to="." method="_on_regen_timer_timeout"]
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
 [connection signal="timeout" from="attack_cooldown" to="." method="_on_attack_cooldown_timeout"]
-[node name="Health" type="Node" parent="."]
-script = ExtResource("3_760hd")
