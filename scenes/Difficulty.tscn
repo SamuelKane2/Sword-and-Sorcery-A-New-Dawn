@@ -22,7 +22,7 @@ offset_bottom = 648.0
 [node name="Sprite2D" type="Sprite2D" parent="Panel"]
 position = Vector2(578.083, 323.179)
 scale = Vector2(3.95805, 3.73358)
-texture = SubResource("CompressedTexture2D_1pc5m")
+texture = ExtResource("2_ay147")
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
