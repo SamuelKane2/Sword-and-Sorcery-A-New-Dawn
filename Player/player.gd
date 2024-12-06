@@ -1,6 +1,4 @@
-class_name Health
-extends Node
-
+extends Node2D
 
 const MAX_HEALTH = 20
 var health = MAX_HEALTH
