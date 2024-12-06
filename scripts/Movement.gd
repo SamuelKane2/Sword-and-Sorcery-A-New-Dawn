@@ -6,11 +6,6 @@ const accel = 300
 const accel_run = 600  # Acceleration when Shift is held
 const friction = 1000
 
-var enemy_inattack_range = false
-var enemy_attack_cooldown = true
-var health = 100
-var player_alive = true
-
 enum {IDLE, MOVE, RUN}
 var state = IDLE  # Default state is IDLE
 
@@ -37,13 +32,6 @@ func _ready():
 func _physics_process(delta):
 	move(delta)
 	animate()
-	enemy_attack()
-
-	if health <= 0:
-		player_alive = false
-		health = 0
-		print("player dead")
-		self.queue_free()
 
 func move(delta):
 	var input_vector = Input.get_vector("left", "right", "up", "down")
@@ -97,37 +85,4 @@ func animate() -> void:
 	animationTree.set(blend_pos_paths[state], blend_position)
 
 	# You can add debugging here to make sure blend_position is updating
-	#print("Blend Position: ", blend_position)
-
-func _on_Attract_body_entered(body):
-	if body.is_in_group("Enemy"):
-		body.attack_timer.start()
-
-func _on_Attract_body_exited(body):
-	if body.is_in_group("Enemy"):
-		body.attack_timer.stop()
-		body.state = body.SURROUND
-
-func _on_Attack_body_entered(body):
-	if body.is_in_group("Enemy"):
-		body.state = body.HIT
-
-func _on_Attack_body_exited(body):
-	if body.is_in_group("Enemy"):
-		body.state = body.SURROUND
-		enemy_inattack_range = false
-
-func _on_hitbox_body_entered(body):
-	if body.is_in_group("Enemy"):
-		enemy_inattack_range = true
-
-func enemy_attack():
-	if enemy_inattack_range and enemy_attack_cooldown == true:
-		health = health - 20
-		enemy_attack_cooldown = false
-		$attack_cooldown.start()
-		print(health)
-
-
-func _on_attack_cooldown_timeout():
-	enemy_attack_cooldown = true
+	print("Blend Position: ", blend_position)
