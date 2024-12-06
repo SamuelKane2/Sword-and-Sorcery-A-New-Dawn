@@ -1,22 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://ffvykyixix82"]
+[gd_scene load_steps=4 format=3 uid="uid://ffvykyixix82"]
 
 [ext_resource type="Script" path="res://scripts/Inventory/big_health_pot.gd" id="1_dodki"]
 [ext_resource type="Texture2D" uid="uid://cbm2apt8bm3pn" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/big_health_pot.png" id="1_hiv4m"]
-[ext_resource type="Resource" uid="uid://b3po638e0u214" path="res://scenes/Inventory/Inventory Items/Resources/big_health_pot.tres" id="2_u5j5u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4vkj7"]
-size = Vector2(8, 11.3333)
+size = Vector2(8, 11.1666)
 
-[node name="BigHealthPot" type="Area2D"]
-scale = Vector2(1.5, 1.5)
+[node name="Node2D" type="Node2D"]
 script = ExtResource("1_dodki")
-itemRes = ExtResource("2_u5j5u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 0.5)
+position = Vector2(0, 0.625013)
+scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_4vkj7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_hiv4m")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
