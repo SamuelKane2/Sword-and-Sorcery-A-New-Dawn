@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://c4xv8bi2kesg2"]
+[gd_scene load_steps=31 format=3 uid="uid://c4xv8bi2kesg2"]
 
 [ext_resource type="Script" path="res://enemies/common/skeleton.gd" id="1_0whxa"]
 [ext_resource type="Texture2D" uid="uid://dtvgushyyo2cl" path="res://assets/RPG CHARACTERS/SKELETON SS.png" id="1_r5f38"]
@@ -206,18 +206,39 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w5cvm"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_nj3k7"]
+radius = 77.0065
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_teslv"]
 radius = 8.0
 height = 18.0
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Skeleton" type="CharacterBody2D" groups=["Enemy"]]
 script = ExtResource("1_0whxa")
 
-[node name="skeleton" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_soycg")
-animation = &"attackSkeleton"
+animation = &"movementSkeleton"
 autoplay = "idleSkeleton"
+frame = 5
+frame_progress = 0.7582
+offset = Vector2(0, -10)
+
+[node name="detection_range" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_range"]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_nj3k7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 4)
-shape = SubResource("CapsuleShape2D_w5cvm")
+position = Vector2(0, -6)
+shape = SubResource("CapsuleShape2D_teslv")
+
+[node name="AttackTimer" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="body_entered" from="detection_range" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="detection_range" to="." method="_on_detection_area_body_exited"]
+[connection signal="timeout" from="AttackTimer" to="." method="_on_AttackTimer_timeout"]
