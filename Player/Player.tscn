@@ -1,7 +1,8 @@
-[gd_scene load_steps=67 format=3 uid="uid://csc6dxriedco1"]
+[gd_scene load_steps=68 format=3 uid="uid://csc6dxriedco1"]
 
 [ext_resource type="Script" path="res://scripts/Movement.gd" id="1_8kd54"]
 [ext_resource type="Texture2D" uid="uid://dpmra2kld3se1" path="res://Player/player assets/tf_tallspritemz/characters/Actor1.png" id="2_8gelg"]
+[ext_resource type="Script" path="res://scripts/health.gd" id="3_760hd"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q1c25"]
 radius = 15.0
@@ -734,6 +735,9 @@ shape = SubResource("CapsuleShape2D_vnqrk")
 
 [node name="attack_cooldown" type="Timer" parent="."]
 wait_time = 3.0
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("3_760hd")
 
 [connection signal="body_entered" from="Attract" to="." method="_on_Attract_body_entered"]
 [connection signal="body_exited" from="Attract" to="." method="_on_Attract_body_exited"]
