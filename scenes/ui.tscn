@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bc6q1d5kf0hw3"]
+[gd_scene load_steps=10 format=3 uid="uid://bjilp0s4s4fgp"]
 
 [ext_resource type="Script" path="res://scripts/ui.gd" id="1_328h3"]
 [ext_resource type="Texture2D" uid="uid://bjsmi1wrr2hgd" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/FG_Item_Icons.png" id="1_gnjjr"]
