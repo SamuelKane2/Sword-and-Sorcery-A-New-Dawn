@@ -3,8 +3,7 @@ extends Node2D
 const MAX_HEALTH = 20
 var health = MAX_HEALTH
 
-func _ready() -> void:
-	set_health_label()
+
 
 func update_health_ui():
 	set_health_label()
