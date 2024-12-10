@@ -9,8 +9,8 @@ extends Control
 #var slots = main_inventory.get_children()
 
 func _ready():
-	#connectSlots()
 	inventory.close()
+	inventory.updated.connect(update)
 	update()
 
 func update():

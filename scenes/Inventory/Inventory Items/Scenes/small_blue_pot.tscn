@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bw3cd6tghuv1m"]
+[gd_scene load_steps=5 format=3 uid="uid://bw3cd6tghuv1m"]
 
 [ext_resource type="PackedScene" uid="uid://df2v3xiuv181c" path="res://scenes/Inventory/Inventory Items/Scenes/collectable.tscn" id="1_diyev"]
+[ext_resource type="Resource" uid="uid://bv3cj6ep8mc8r" path="res://scenes/Inventory/Inventory Items/Resources/small_blue_pot.tres" id="2_e0hpn"]
 [ext_resource type="Texture2D" uid="uid://crl567tnjdyi4" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/small_blue_pot.png" id="2_tl8xd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fqfa6"]
@@ -8,6 +9,8 @@ resource_local_to_scene = true
 size = Vector2(4, 10)
 
 [node name="Small_Blue_Pot" instance=ExtResource("1_diyev")]
+scale = Vector2(1.5, 1.5)
+itemRes = ExtResource("2_e0hpn")
 
 [node name="CollisionShape2D" parent="." index="0"]
 shape = SubResource("RectangleShape2D_fqfa6")

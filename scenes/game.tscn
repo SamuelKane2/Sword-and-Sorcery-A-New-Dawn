@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://o7eewyk6wtga"]
+[gd_scene load_steps=22 format=4 uid="uid://o7eewyk6wtga"]
 
 [ext_resource type="Texture2D" uid="uid://bmgd68l7a0llg" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Grounds.png" id="1_tqb0j"]
 [ext_resource type="Texture2D" uid="uid://ctle6qjilrjyy" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Village.png" id="2_hn4lr"]
@@ -7,7 +7,11 @@
 [ext_resource type="PackedScene" uid="uid://bc6q1d5kf0hw3" path="res://scenes/ui.tscn" id="5_qfvc6"]
 [ext_resource type="Texture2D" uid="uid://bjsmi1wrr2hgd" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/FG_Item_Icons.png" id="6_081g2"]
 [ext_resource type="PackedScene" uid="uid://csc6dxriedco1" path="res://Player/Player.tscn" id="6_wo8ju"]
+[ext_resource type="PackedScene" uid="uid://cet20uwl75onj" path="res://scenes/Inventory/Inventory Items/Scenes/big_blue_pot.tscn" id="7_e1tx6"]
 [ext_resource type="PackedScene" uid="uid://bpruuqyipjiud" path="res://scenes/Inventory/Inventory Items/Scenes/big_health_pot.tscn" id="7_na0ga"]
+[ext_resource type="PackedScene" uid="uid://bw3cd6tghuv1m" path="res://scenes/Inventory/Inventory Items/Scenes/small_blue_pot.tscn" id="8_i6exf"]
+[ext_resource type="PackedScene" uid="uid://cqwq5if117a4l" path="res://scenes/Inventory/Inventory Items/Scenes/small_health_pot.tscn" id="9_f62t4"]
+[ext_resource type="PackedScene" uid="uid://btm4t73wfmrte" path="res://scenes/Inventory/Inventory Items/Scenes/sword.tscn" id="10_vbxqy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cebaa"]
 texture = ExtResource("1_tqb0j")
@@ -3011,6 +3015,10 @@ texture = ExtResource("6_081g2")
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_n7sar"]
 resource_name = "Collectables"
 scenes/1/scene = ExtResource("7_na0ga")
+scenes/2/scene = ExtResource("7_e1tx6")
+scenes/3/scene = ExtResource("8_i6exf")
+scenes/4/scene = ExtResource("9_f62t4")
+scenes/5/scene = ExtResource("10_vbxqy")
 
 [sub_resource type="TileSet" id="TileSet_rrsyv"]
 sources/0 = SubResource("TileSetAtlasSource_1ga2u")
@@ -3023,7 +3031,7 @@ tile_map_data = PackedByteArray("AAAFAAMAAAAFAA0AAAAFAAQAAAAFAA0AAAAFAAUAAAAFAA0
 tile_set = SubResource("TileSet_gjhv4")
 
 [node name="Collectables" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAD+/w4AAQAAAAAAAQA=")
+tile_map_data = PackedByteArray("AAD+/w4AAQAAAAAAAQD//wwAAQAAAAAAAgD+/xAAAQAAAAAAAwAHAA8AAQAAAAAABAAFAAwAAQAAAAAABQA=")
 tile_set = SubResource("TileSet_rrsyv")
 
 [node name="UI" parent="." instance=ExtResource("5_qfvc6")]

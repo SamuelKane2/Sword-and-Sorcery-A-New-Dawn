@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bpruuqyipjiud"]
+[gd_scene load_steps=6 format=3 uid="uid://bpruuqyipjiud"]
 
 [ext_resource type="Texture2D" uid="uid://cbm2apt8bm3pn" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/big_health_pot.png" id="1_hiv4m"]
 [ext_resource type="PackedScene" uid="uid://df2v3xiuv181c" path="res://scenes/Inventory/Inventory Items/Scenes/collectable.tscn" id="1_owril"]
+[ext_resource type="Script" path="res://scripts/Inventory/Inventory Items/big_health_pot.gd" id="2_tp4uc"]
+[ext_resource type="Resource" uid="uid://b3po638e0u214" path="res://scenes/Inventory/Inventory Items/Resources/big_health_pot.tres" id="3_i3clt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_katcg"]
 resource_local_to_scene = true
@@ -9,6 +11,8 @@ size = Vector2(8, 11)
 
 [node name="Big_Health_Pot" instance=ExtResource("1_owril")]
 scale = Vector2(1.5, 1.5)
+script = ExtResource("2_tp4uc")
+itemRes = ExtResource("3_i3clt")
 
 [node name="CollisionShape2D" parent="." index="0"]
 position = Vector2(0, 0.5)

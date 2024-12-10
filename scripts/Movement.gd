@@ -92,4 +92,4 @@ func animate() -> void:
 	
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.has_method("collect"):
-		area.collect()
+		area.collect(inventory)
