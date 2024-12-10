@@ -1,4 +1,4 @@
 extends Node2D
 
-func collect(inventory: Inventory):
+func collect():
 	queue_free()
