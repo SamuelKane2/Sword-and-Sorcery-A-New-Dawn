@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" path="res://scripts/Menu.gd" id="1_uxjhr"]
 [ext_resource type="Texture2D" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/download (1).jpg" id="2_owhrb"]
+[gd_scene load_steps=3 format=3 uid="uid://hoyha78ucxy2"]
+
+[ext_resource type="Script" path="res://scripts/Menu.gd" id="1_uxjhr"]
+[ext_resource type="Texture2D" uid="uid://ce5v2qcem8nsx" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/download (1).jpg" id="2_n3dhg"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -20,7 +24,7 @@ offset_bottom = 648.0
 [node name="Sprite2D" type="Sprite2D" parent="Panel"]
 position = Vector2(577.706, 324.069)
 scale = Vector2(3.96065, 3.72335)
-texture = ExtResource("2_owhrb")
+texture = ExtResource("2_n3dhg")
 
 [node name="Title" type="Label" parent="Panel"]
 layout_mode = 0
