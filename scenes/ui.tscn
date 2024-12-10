@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bc6q1d5kf0hw3"]
+[gd_scene load_steps=10 format=3 uid="uid://bjilp0s4s4fgp"]
 
 [ext_resource type="Script" path="res://scripts/ui.gd" id="1_328h3"]
 [ext_resource type="Texture2D" uid="uid://bjsmi1wrr2hgd" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/FG_Item_Icons.png" id="1_gnjjr"]
@@ -81,11 +81,20 @@ offset_left = 40.0
 offset_top = 11.0
 offset_right = 124.0
 offset_bottom = 43.0
+theme_override_fonts/font = ExtResource("4_hqd86")
 theme_override_font_sizes/font_size = 32
 text = "347"
+
+[node name="HeartCounter2" type="Label" parent="UI/Stats"]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 12.0
+offset_right = 235.0
+offset_bottom = 44.0
+theme_override_fonts/font = ExtResource("4_hqd86")
+theme_override_font_sizes/font_size = 32
+text = "20"
 
 [node name="Inventory" parent="UI" instance=ExtResource("4_brnyl")]
 unique_name_in_owner = true
 layout_mode = 1
-
-[node name="Stats#CoinCounter" type="Label" parent="."]
