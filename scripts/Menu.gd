@@ -2,7 +2,7 @@ extends Control
 
 func _on_play_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/Difficulty.tscn")
-	print("start")
+	print("play")
 
 func _on_quit_button_pressed():
 	get_tree().quit()
