@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://yitim2mn7ehk"]
 
-[ext_resource type="Script" path="res://scenes/npc.gd" id="1_uc6on"]
+[ext_resource type="Script" path="res://scripts/npc.gd" id="1_uc6on"]
 [ext_resource type="Texture2D" uid="uid://djtrh8g6xtraw" path="res://assets/MinifolksVillagers/MinifolksVillagers/Without Outline/MiniNobleMan.png" id="2_8hrlj"]
 [ext_resource type="PackedScene" uid="uid://xlgchhxkpfuq" path="res://Dialogue/dialogue.tscn" id="3_snn2l"]
 
@@ -46,11 +46,12 @@ radius = 5.09902
 [sub_resource type="CircleShape2D" id="CircleShape2D_ou2lh"]
 radius = 18.0
 
-[node name="npc" type="CharacterBody2D"]
+[node name="Noble_Man" type="CharacterBody2D"]
 script = ExtResource("1_uc6on")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -5)
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_dyauj")
 frame_progress = 0.212874
 
@@ -76,7 +77,9 @@ offset_right = 35.0
 offset_bottom = 2.0
 grow_horizontal = 1
 grow_vertical = 1
+metadata/_edit_use_anchors_ = true
 
 [connection signal="body_entered" from="chat_detection_area" to="." method="_on_chat_detection_area_body_entered"]
 [connection signal="body_exited" from="chat_detection_area" to="." method="_on_chat_detection_area_body_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="dialogue_finished" from="Dialogue" to="." method="_on_dialogue_dialogue_finished"]

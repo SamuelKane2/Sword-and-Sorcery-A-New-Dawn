@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://o7eewyk6wtga"]
+[gd_scene load_steps=25 format=4 uid="uid://o7eewyk6wtga"]
 
 [ext_resource type="Texture2D" uid="uid://bmgd68l7a0llg" path="res://Player/FG_Grounds.png" id="1_tqb0j"]
 [ext_resource type="Texture2D" uid="uid://ctle6qjilrjyy" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Village.png" id="2_hn4lr"]
@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://dqa6biv5ae256" path="res://enemies/common/orc.tscn" id="11_rmylb"]
 [ext_resource type="PackedScene" uid="uid://c4xv8bi2kesg2" path="res://enemies/common/skeleton.tscn" id="12_cov0s"]
 [ext_resource type="PackedScene" uid="uid://yitim2mn7ehk" path="res://scenes/npc.tscn" id="13_kpvmb"]
+[ext_resource type="PackedScene" uid="uid://bd8bvl3xc614m" path="res://scenes/old_man.tscn" id="14_asv64"]
+[ext_resource type="PackedScene" uid="uid://hfnmabyae0as" path="res://scenes/queen.tscn" id="15_2jlky"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_38k2m"]
 
@@ -2425,3 +2427,9 @@ scale = Vector2(0.5, 0.5)
 
 [node name="npc" parent="." instance=ExtResource("13_kpvmb")]
 position = Vector2(344, 416)
+
+[node name="Old Man" parent="." instance=ExtResource("14_asv64")]
+position = Vector2(2096, 624)
+
+[node name="Queen" parent="." instance=ExtResource("15_2jlky")]
+position = Vector2(1776, -616)

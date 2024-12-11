@@ -22,8 +22,8 @@ func _ready():
 	randomize()
 	start_pos = position
 func _process(delta):
-		if current_state == 0 or current_state == 1:
-			$AnimatedSprite2D.play("idle")
+		#if current_state == 0 or current_state == 1:
+			#$AnimatedSprite2D.play("idle")
 		#elif current_state == 2 and !is_chatting:
 			#if dir.x == -1:
 				#$AnimatedSprite2D.play("walk_w")
@@ -44,6 +44,7 @@ func _process(delta):
 					move(delta)
 		if Input.is_action_just_pressed("chat"):
 			print("chatting with npc")
+			$Dialogue.start()
 			is_roaming = false
 			is_chatting = true
 			$AnimatedSprite2D.play("idle")
@@ -75,3 +76,8 @@ func _on_chat_detection_area_body_exited(body):
 func _on_timer_timeout() -> void:
 	$Timer.wait_time = choose([0.5, 1, 1.5])
 	current_state = choose([IDLE, NEW_DIR, MOVE])
+
+
+func _on_dialogue_dialogue_finished():
+	is_chatting = false
+	is_roaming = true
