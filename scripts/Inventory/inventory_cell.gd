@@ -1,19 +1,11 @@
 extends Button
 
 @onready var background_sprite: Sprite2D = $backgroundSprite
-@onready var center_container: CenterContainer = $CenterContainer
-@onready var item_sprite: Sprite2D = $CenterContainer/Panel/itemSprite
+@onready var center_container: CenterContainer = $CenterContainerte
 
-var itemStackGui: ItemStack
+#               : ItemStackGui
+var itemStackGui
 
-func insert(isg: ItemStack):
+func insert(isg):
 	itemStackGui = isg
 	center_container.add_child(itemStackGui)
-
-func update(item: InventoryItem):
-	if !item:
-		item_sprite.visible = false
-	else:
-		item_sprite.visible = true
-		item_sprite.texture = item.texture
-		#slot.item.texture
