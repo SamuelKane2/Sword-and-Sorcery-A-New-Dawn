@@ -664,7 +664,7 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 radius = 120.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_n8d7d"]
-radius = 70.0
+radius = 80.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vnqrk"]
 radius = 20.0
@@ -716,7 +716,7 @@ position = Vector2(0, -27)
 shape = SubResource("CircleShape2D_n8d7d")
 
 [node name="Regen_Timer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 20.0
 autostart = true
 
 [node name="healthbar" type="ProgressBar" parent="."]
