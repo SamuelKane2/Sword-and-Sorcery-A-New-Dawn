@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://yitim2mn7ehk"]
+[gd_scene load_steps=11 format=3 uid="uid://b372g0t1p71t8"]
 
 [ext_resource type="Script" path="res://scripts/npc.gd" id="1_uc6on"]
 [ext_resource type="Texture2D" uid="uid://djtrh8g6xtraw" path="res://assets/MinifolksVillagers/MinifolksVillagers/Without Outline/MiniNobleMan.png" id="2_8hrlj"]

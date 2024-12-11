@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://hfnmabyae0as"]
+[gd_scene load_steps=8 format=3 uid="uid://dr7erkccdf86f"]
 
 [ext_resource type="Script" path="res://scripts/npc.gd" id="1_cl5t3"]
 [ext_resource type="Texture2D" uid="uid://bjp4yea1j7ncl" path="res://assets/MinifolksVillagers/MinifolksVillagers/Without Outline/MiniQueen.png" id="1_jbmqr"]

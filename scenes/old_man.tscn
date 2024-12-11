@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bd8bvl3xc614m"]
+[gd_scene load_steps=8 format=3 uid="uid://b8tjtkvec3v30"]
 
 [ext_resource type="Script" path="res://scripts/npc.gd" id="1_lxqd0"]
 [ext_resource type="Texture2D" uid="uid://cd43p2ky66dwb" path="res://assets/MinifolksVillagers/MinifolksVillagers/Without Outline/MiniOldMan.png" id="1_mqh53"]
