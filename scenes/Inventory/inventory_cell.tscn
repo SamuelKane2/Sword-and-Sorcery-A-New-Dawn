@@ -25,6 +25,5 @@ offset_bottom = 71.0
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_6soue")
 
-[node name="itemSprite" type="Sprite2D" parent="CenterContainer"]
-position = Vector2(35, 35)
+[node name="itemSprite" type="Sprite2D" parent="CenterContainer/Panel"]
 scale = Vector2(4, 4)

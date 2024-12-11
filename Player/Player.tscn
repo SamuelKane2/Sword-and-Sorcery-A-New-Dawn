@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/Movement.gd" id="1_8kd54"]
 [ext_resource type="Texture2D" uid="uid://dpmra2kld3se1" path="res://Player/player assets/tf_tallspritemz/characters/Actor1.png" id="2_8gelg"]
-[ext_resource type="Resource" uid="uid://bnu2h065ropgh" path="res://scenes/Inventory/Inventory Items/playerInventory.tres" id="2_ccjd5"]
+[ext_resource type="Resource" uid="uid://bnu2h065ropgh" path="res://scenes/Inventory/Inventory Items/Resources/playerInventory.tres" id="2_ccjd5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aiy2e"]
 atlas = ExtResource("2_8gelg")
