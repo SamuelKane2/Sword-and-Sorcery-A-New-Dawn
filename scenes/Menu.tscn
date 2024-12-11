@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://bb05a0x7rif0y"]
+[gd_scene load_steps=3 format=3 uid="uid://dtvf4mbsrvvs3"]
 
 [ext_resource type="Script" path="res://scripts/Menu.gd" id="1_uxjhr"]
 [ext_resource type="Texture2D" uid="uid://ce5v2qcem8nsx" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/download (1).jpg" id="2_owhrb"]
@@ -68,5 +68,5 @@ offset_top = 536.0
 offset_right = 768.0
 offset_bottom = 568.0
 
-[connection signal="pressed" from="Panel/PlayButton" to="Panel" method="_on_play_button_pressed"]
-[connection signal="pressed" from="Panel/QuitButton" to="Panel" method="_on_quit_button_pressed"]
+[connection signal="pressed" from="Panel/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="Panel/QuitButton" to="." method="_on_quit_button_pressed"]
