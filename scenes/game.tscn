@@ -2454,32 +2454,21 @@ position = Vector2(448, -145)
 polygon = PackedVector2Array(121, -48, 128, -48, 128, -55, 125, -57, 125, -64, 132, -65, 136, -70, 142, -81, 141, -90, 130, -102, 121, -103, 112, -102, 99, -90, 99, -80, 102, -72, 107, -66, 115, -65, 115, -56, 113, -56, 111, -54, 112, -50)
 
 [node name="treeCollision8" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2(1020, -1)
-polygon = PackedVector2Array(121, -48, 128, -48, 128, -55, 125, -57, 125, -64, 132, -65, 136, -70, 142, -81, 141, -90, 130, -102, 121, -103, 112, -102, 99, -90, 99, -80, 102, -72, 107, -66, 115, -65, 115, -56, 113, -56, 111, -54, 112, -50)
-
-[node name="treeCollision9" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(1951, -16)
 polygon = PackedVector2Array(121, -48, 128, -48, 128, -55, 125, -57, 125, -64, 132, -65, 136, -70, 142, -81, 141, -90, 130, -102, 121, -103, 112, -102, 99, -90, 99, -80, 102, -72, 107, -66, 115, -65, 115, -56, 113, -56, 111, -54, 112, -50)
 
-[node name="treeCollision10" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2(1042, 0)
-polygon = PackedVector2Array(121, -48, 128, -48, 128, -55, 125, -57, 125, -64, 132, -65, 136, -70, 142, -81, 141, -90, 130, -102, 121, -103, 112, -102, 99, -90, 99, -80, 102, -72, 107, -66, 115, -65, 115, -56, 113, -56, 111, -54, 112, -50)
-
-[node name="treeCollision11" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2(1040, -17)
-polygon = PackedVector2Array(121, -48, 128, -48, 128, -55, 125, -57, 125, -64, 132, -65, 136, -70, 142, -81, 141, -90, 130, -102, 121, -103, 112, -102, 99, -90, 99, -80, 102, -72, 107, -66, 115, -65, 115, -56, 113, -56, 111, -54, 112, -50)
-
-[node name="treeCollision12" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2(1022, -17)
-polygon = PackedVector2Array(121, -48, 128, -48, 128, -55, 125, -57, 125, -64, 132, -65, 136, -70, 142, -81, 141, -90, 130, -102, 121, -103, 112, -102, 99, -90, 99, -80, 102, -72, 107, -66, 115, -65, 115, -56, 113, -56, 111, -54, 112, -50)
-
-[node name="treeCollision13" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="treeCollision9" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(1280, 96)
 polygon = PackedVector2Array(121, -48, 128, -48, 128, -55, 125, -57, 125, -64, 132, -65, 136, -70, 142, -81, 141, -90, 130, -102, 121, -103, 112, -102, 99, -90, 99, -80, 102, -72, 107, -66, 115, -65, 115, -56, 113, -56, 111, -54, 112, -50)
 
-[node name="treeCollision14" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="treeCollision10" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(1521, 111)
 polygon = PackedVector2Array(121, -48, 128, -48, 128, -55, 125, -57, 125, -64, 132, -65, 136, -70, 142, -81, 141, -90, 130, -102, 121, -103, 112, -102, 99, -90, 99, -80, 102, -72, 107, -66, 115, -65, 115, -56, 113, -56, 111, -54, 112, -50)
+
+[node name="quadTeeCollisiion" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(1136, -50, 1142, -50, 1143, -48, 1145, -48, 1146, -50, 1157, -50, 1159, -48, 1161, -48, 1163, -51, 1165, -51, 1166, -50, 1167, -50, 1168, -51, 1167, -52, 1167, -53, 1168, -53, 1168, -55, 1165, -57, 1165, -65, 1172, -65, 1179, -76, 1181, -86, 1179, -90, 1182, -97, 1181, -104, 1177, -109, 1166, -119, 1153, -119, 1150, -117, 1144, -119, 1135, -117, 1129, -113, 1123, -105, 1123, -97, 1125, -92, 1122, -85, 1122, -81, 1124, -79, 1126, -72, 1133, -66, 1139, -65, 1139, -56)
+
+[node name="bluehouse" type="CollisionPolygon2D" parent="StaticBody2D"]
 
 [node name="Player" parent="." instance=ExtResource("6_wo8ju")]
 position = Vector2(32, 32)
