@@ -26,19 +26,17 @@ func connectSlots():
 
 func update():
 	for i in range(min(inventory.items.size(), slots.size())):
-		slots[i].update(inventory.items[i])
+		var inventorySlot = inventory.slots[i]
+
+		if !inventorySlot.item: continue
 		
-#		var inventorySlot = inventory.slots[i]
-#
-#		if !inventorySlot.item: continue
-#		
-#		var itemStack = slots.itemStack
-#		if !itemStack:
-#			itemStack = ItemStackClass.instantiate()
-#			slots[i].inster(itemStack)
-			
-#			itemStack.inventorySlot = inventorySlot
-#			itemStack.update()
+		var itemStack = slots.itemStack
+		if !itemStack:
+			itemStack = ItemStackClass.instantiate()
+			slots[i].inster(itemStack)
+		
+			itemStack.inventorySlot = inventorySlot
+			itemStack.update()
 
 var isOpen: bool = false
 
