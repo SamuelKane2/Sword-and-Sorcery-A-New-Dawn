@@ -1,16 +1,15 @@
-# Second Quarter Template
-
-> ⚠️ <ins style="color:yellow;">**ALERT**</ins> ⚠️ If you are seeing this, it means you aren't done with your project yet because you haven't updated the README.md file. Make sure to double check the rubric to make sure you aren't missing any easy points before submitting your project. Once you've done so, you can remove this text from the file.
-
-### Gameplay Features to Be Graded (Max 8)
+### Gameplay Features 
 * Movement and Collision
-* Enemies and Traps
+* Enemies
 * Tilemaps and Worldbuilding
-* ?
+* Inventory
+* Dialouge
+* GUI
+* Combat
 
-### Examples/Locations of Implemented Features for Grading
-* Inheritance - 
-* Encapsulation - 
+### Examples/Locations of Implemented Features
+* Inheritance - Collect is used as a class name for picking stuff up.
+* Encapsulation - Also in the iunventory GUI code there is an example of enscapuslaion in a few of the IF statments where there is a varbible that can't be used anywhere else.
 * Polymorphism - 
 * Abstraction - 
 * Godot Features
