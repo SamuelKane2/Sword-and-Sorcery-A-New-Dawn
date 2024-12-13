@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
 # Declare the health variable with a default value or fetch it from another part of your code
-var skeletonHealth = 100  # Example starting health
+var skeletonHealth = 200  # Example starting health
 var health = skeletonHealth
-var speed = 40
+var speed = 35
 var player_chase = false
 var player = null
 
@@ -48,7 +48,7 @@ func _physics_process(_delta):
 					attack_timer.start(2.0)  # Start the timer with a delay (2 seconds)
 
 		# Play the movement animation when chasing the player
-		$AnimatedSprite.play("movementSkeleton")
+		$AnimatedSprite.play("movementOrc")
 
 		# Flip the sprite based on the player's position
 		if player.position.x - position.x < 0:
@@ -57,7 +57,7 @@ func _physics_process(_delta):
 			$AnimatedSprite.flip_h = false
 	else:
 		# If player is not detected, stay idle and do not move
-		$AnimatedSprite.play("idleSkeleton")
+		$AnimatedSprite.play("idleOrc")
 		# No movement when player is not detected
 
 	# Handle the collision range detection enable/disable based on death state

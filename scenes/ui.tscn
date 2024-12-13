@@ -21,7 +21,7 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xdbnm"]
-atlas = ExtResource("2_qnp1j")
+atlas = ExtResource("1_gnjjr")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mqwyk"]
@@ -79,6 +79,7 @@ offset_left = 40.0
 offset_top = 11.0
 offset_right = 124.0
 offset_bottom = 43.0
+theme_override_fonts/font = ExtResource("4_hqd86")
 theme_override_font_sizes/font_size = 32
 text = "347"
 
@@ -93,5 +94,6 @@ offset_left = 179.0
 offset_top = 12.0
 offset_right = 235.0
 offset_bottom = 44.0
+theme_override_fonts/font = ExtResource("4_hqd86")
 theme_override_font_sizes/font_size = 32
 text = "20"
