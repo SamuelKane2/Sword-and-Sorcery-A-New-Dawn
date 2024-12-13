@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://bqrlh4pdy5c47"]
+[gd_scene load_steps=7 format=4 uid="uid://cl1hy36afnmxe"]
 
 [ext_resource type="PackedScene" uid="uid://csc6dxriedco1" path="res://Player/Player.tscn" id="1_0bkb2"]
 [ext_resource type="Texture2D" uid="uid://ctle6qjilrjyy" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Village.png" id="1_ugxdh"]
