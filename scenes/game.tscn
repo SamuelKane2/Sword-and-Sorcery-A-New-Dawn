@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://o7eewyk6wtga"]
+[gd_scene load_steps=21 format=4 uid="uid://o7eewyk6wtga"]
 
 [ext_resource type="Texture2D" uid="uid://bmgd68l7a0llg" path="res://Player/FG_Grounds.png" id="1_tqb0j"]
 [ext_resource type="Texture2D" uid="uid://ctle6qjilrjyy" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Village.png" id="2_hn4lr"]
@@ -6,12 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://cugem8e6v2kaa" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Extras.png" id="4_73n50"]
 [ext_resource type="PackedScene" uid="uid://bc6q1d5kf0hw3" path="res://scenes/ui.tscn" id="5_qfvc6"]
 [ext_resource type="PackedScene" uid="uid://csc6dxriedco1" path="res://Player/Player.tscn" id="6_wo8ju"]
-[ext_resource type="PackedScene" uid="uid://cv1u0o8ec1556" path="res://enemies/common/slime.tscn" id="7_dmmjn"]
-[ext_resource type="PackedScene" uid="uid://cf01iol0f3dnr" path="res://enemies/bosses/dragon.tscn" id="8_w8sgr"]
-[ext_resource type="PackedScene" uid="uid://c38os3ylwfssw" path="res://enemies/bosses/baby_dragon.tscn" id="9_kidoo"]
 [ext_resource type="PackedScene" uid="uid://cry0m666haeb" path="res://enemies/bosses/big_kinght.tscn" id="10_gxx1p"]
-[ext_resource type="PackedScene" uid="uid://dqa6biv5ae256" path="res://enemies/common/orc.tscn" id="11_rmylb"]
 [ext_resource type="PackedScene" uid="uid://c4xv8bi2kesg2" path="res://enemies/common/skeleton.tscn" id="12_cov0s"]
+[ext_resource type="PackedScene" uid="uid://cgnuxh0l4l7gj" path="res://enemies/common/orcWorking.tscn" id="12_iv1ir"]
+[ext_resource type="PackedScene" uid="uid://5r2wsqqx3dog" path="res://enemies/bosses/dragonWorking.tscn" id="13_c38e6"]
+[ext_resource type="PackedScene" uid="uid://ccpn6yapnvxeh" path="res://enemies/common/slimeWorking.tscn" id="13_qepxn"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_38k2m"]
 
@@ -2310,89 +2309,9 @@ tile_set = SubResource("TileSet_gjhv4")
 [node name="UI" parent="." instance=ExtResource("5_qfvc6")]
 visible = false
 
-[node name="Slime" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(1496, 464)
-
-[node name="Slime2" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(1368, 456)
-
-[node name="Slime3" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(1328, 240)
-
-[node name="Slime4" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(1448, 128)
-
-[node name="Slime5" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(1536, 280)
-
-[node name="Slime6" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(2072, -224)
-
-[node name="Slime7" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(1368, -264)
-
-[node name="Slime8" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(576, -96)
-
-[node name="Slime9" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(328, -216)
-
-[node name="Slime10" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(152, -184)
-
-[node name="Slime11" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(664, -392)
-
-[node name="Slime12" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(368, -712)
-
-[node name="Slime13" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(960, -792)
-
-[node name="Slime14" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(400, -408)
-
-[node name="Dragon" parent="." instance=ExtResource("8_w8sgr")]
-position = Vector2(528, -688)
-scale = Vector2(2.5, 3)
-
-[node name="Baby Dragon" parent="." instance=ExtResource("9_kidoo")]
-position = Vector2(2255, -208)
-scale = Vector2(0.85, 1)
-
-[node name="Slime15" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(1080, -200)
-
-[node name="Slime16" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(1248, -144)
-
-[node name="Slime17" parent="." instance=ExtResource("7_dmmjn")]
-position = Vector2(792, -688)
-
 [node name="Big Kinght" parent="." instance=ExtResource("10_gxx1p")]
 position = Vector2(2200, 512)
 scale = Vector2(1.75, 1.75)
-
-[node name="Orc" parent="." instance=ExtResource("11_rmylb")]
-position = Vector2(1528, 456)
-
-[node name="Orc2" parent="." instance=ExtResource("11_rmylb")]
-position = Vector2(1432, 256)
-
-[node name="Orc3" parent="." instance=ExtResource("11_rmylb")]
-position = Vector2(2456, -168)
-
-[node name="Orc4" parent="." instance=ExtResource("11_rmylb")]
-position = Vector2(1560, -216)
-
-[node name="Orc5" parent="." instance=ExtResource("11_rmylb")]
-position = Vector2(480, -208)
-
-[node name="Orc6" parent="." instance=ExtResource("11_rmylb")]
-position = Vector2(888, -584)
-
-[node name="Orc7" parent="." instance=ExtResource("11_rmylb")]
-position = Vector2(288, -808)
 
 [node name="skeleton" parent="." instance=ExtResource("12_cov0s")]
 position = Vector2(392, -576)
@@ -2421,3 +2340,64 @@ position = Vector2(1616, 632)
 [node name="Player" parent="." instance=ExtResource("6_wo8ju")]
 position = Vector2(32, 32)
 scale = Vector2(0.5, 0.5)
+
+[node name="Orc" parent="." instance=ExtResource("12_iv1ir")]
+position = Vector2(197, -239)
+
+[node name="Slime" parent="." instance=ExtResource("13_qepxn")]
+position = Vector2(319, -222)
+
+[node name="Slime2" parent="." instance=ExtResource("13_qepxn")]
+position = Vector2(400, -145)
+
+[node name="Slime3" parent="." instance=ExtResource("13_qepxn")]
+position = Vector2(486, -124)
+
+[node name="Slime4" parent="." instance=ExtResource("13_qepxn")]
+position = Vector2(575, -107)
+
+[node name="Orc2" parent="." instance=ExtResource("12_iv1ir")]
+position = Vector2(478, -239)
+
+[node name="Orc3" parent="." instance=ExtResource("12_iv1ir")]
+position = Vector2(618, -196)
+
+[node name="Dragon2" parent="." instance=ExtResource("13_c38e6")]
+position = Vector2(563, -654)
+scale = Vector2(3, 3)
+
+[node name="Dragon" parent="." instance=ExtResource("13_c38e6")]
+position = Vector2(2222, -199)
+
+[node name="Dragon3" parent="." instance=ExtResource("13_c38e6")]
+position = Vector2(1272, -138)
+
+[node name="Orc4" parent="." instance=ExtResource("12_iv1ir")]
+position = Vector2(1327, -302)
+
+[node name="Orc5" parent="." instance=ExtResource("12_iv1ir")]
+position = Vector2(1105, -158)
+
+[node name="Orc6" parent="." instance=ExtResource("12_iv1ir")]
+position = Vector2(1308, -3)
+
+[node name="Skeleton" parent="." instance=ExtResource("12_cov0s")]
+position = Vector2(1444, -84)
+
+[node name="Skeleton2" parent="." instance=ExtResource("12_cov0s")]
+position = Vector2(996, -23)
+
+[node name="Skeleton3" parent="." instance=ExtResource("12_cov0s")]
+position = Vector2(532, 245)
+
+[node name="Skeleton4" parent="." instance=ExtResource("12_cov0s")]
+position = Vector2(458, 380)
+
+[node name="Skeleton5" parent="." instance=ExtResource("12_cov0s")]
+position = Vector2(749, 248)
+
+[node name="Slime5" parent="." instance=ExtResource("13_qepxn")]
+position = Vector2(164, 444)
+
+[node name="Slime6" parent="." instance=ExtResource("13_qepxn")]
+position = Vector2(360, 281)
