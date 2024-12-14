@@ -10,8 +10,8 @@
 ### Examples/Locations of Implemented Features
 * Inheritance - Collect is used as a class name for picking stuff up
 * Encapsulation - Also in the iunventory GUI code there is an example of enscapuslaion in a few of the IF statments where there is a varbible that can't be used anywhere else
-* Polymorphism - 
-* Abstraction - 
+* Polymorphism - There are some examples of polymorphism in the health.gd, player.gd, and in the enimes srcpits.
+* Abstraction - There are accepets of absrtaion in the srcipts for some of the enimes that follow youa nd same with the npc that moves freely
 * Godot Features 
 * Movement and Collision - There is a script called movment that makes the player move around, and there is many diffrent uses of colliosions used in the player scene
 	* Node Types - Spatial, Node, and Canvasitem
