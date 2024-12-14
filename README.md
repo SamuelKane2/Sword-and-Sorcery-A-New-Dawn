@@ -14,9 +14,8 @@
 * Abstraction - 
 * Godot Features 
 * Movement and Collision - There is a script called movment that makes the player move around, and there is many diffrent uses of colliosions used in the player scene
-	* Node Types - 
-	* Signals - 
-	* Scenes - 
+	* Node Types - Animation player, Collsion 2d, Animation player
+	* Scenes - Player.tscn and Game.tscn
 * Enemies - They can be found in the many diffrent enimie scenes, theres a skeliton, slime, orc, and the drangon scenes, these can be accesed through the file called enimies. The enimies can follow you around and attack and kill you.
   	* Node Types - 
 	* Signals - 
