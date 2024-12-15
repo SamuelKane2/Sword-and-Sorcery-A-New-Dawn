@@ -10,4 +10,4 @@ Pivots:
 -Make sure that everybody knows that everybody else is doing so that we don't have two people developing the character at the same time, which wastes time
 
 Concerns:
--none
+-Getting the project fully completed
