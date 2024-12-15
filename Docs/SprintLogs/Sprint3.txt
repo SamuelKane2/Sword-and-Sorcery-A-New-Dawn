@@ -10,6 +10,4 @@ Pivots:
 -none
 
 Concerns:
-- Completing the project
-
-We are behind schedule. We did very good collaboratively, we talked a lot of things out, but there were still lots of merge conflicts which hindered our ability to complete this project on time.
+- Completing the project on time
