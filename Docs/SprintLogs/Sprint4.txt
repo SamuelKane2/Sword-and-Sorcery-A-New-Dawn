@@ -1,11 +1,14 @@
 Completed Tasks:
 Brenden - Primitive dialogue
+Levi - Primitive inventory
 
 Roadblocks:
--none
+-Figuring out how to solve the main branch, this wasted a lot of time
+-Little errors here and there hindering progress
 
 Pivots:
--none
+-Setting deadlines better
+-What is each team member going to do in a certain sprint
 
 Concerns:
 - Finishing the project
