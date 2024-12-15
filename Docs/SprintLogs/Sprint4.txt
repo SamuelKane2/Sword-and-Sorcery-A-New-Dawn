@@ -8,4 +8,4 @@ Pivots:
 -none
 
 Concerns:
--none
+- Finishing the project
