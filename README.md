@@ -1,3 +1,6 @@
+### Description
+Our game is an open-world fantasy RPG where players can explore a detailed environment, interact with NPCs, and engage in combat with various enemies. The core gameplay loop involves progression through quests and battles, ultimately leading to a boss fight that marks the game's conclusion. The focus is on creating an immersive experience with a blend of exploration, story, and combat mechanics, aiming to balance player freedom with clear objectives.
+
 ### Gameplay Features 
 * Movement and Collision
 * Enemies
@@ -9,7 +12,7 @@
 
 ### Examples/Locations of Implemented Features
 * Inheritance - Collect is used as a class name for picking stuff up
-* Encapsulation - Also in the iunventory GUI code there is an example of enscapuslaion in a few of the IF statments where there is a varbible that can't be used anywhere else
+* Encapsulation - In the iunventory GUI code there is an example of enscapuslaion in a few of the IF statments where there is a varbible that can't be used anywhere else
 * Polymorphism - There are some examples of polymorphism in the health.gd, player.gd, and in the enimes srcpits.
 * Abstraction - There are accepets of absrtaion in the srcipts for some of the enimes that follow youa nd same with the npc that moves freely
 * Godot Features 
