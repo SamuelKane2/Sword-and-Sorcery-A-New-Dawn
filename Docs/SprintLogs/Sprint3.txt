@@ -9,4 +9,4 @@ Pivots:
 -
 
 Concerns:
--none
+- Completing the project
