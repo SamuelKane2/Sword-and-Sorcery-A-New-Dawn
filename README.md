@@ -23,22 +23,22 @@ spelling/grammar mistakes - 28
 There are many different uses of collisions used in the player scene.
 Node Types - Spatial, Node, and Canvasitem
    - **Testing**: Use the arrow keys or WASD to move the player character in the game.
-   - **Scenes**: Found in `player.tscn` and `game.tscn`.
-   - **Related Scripts**: `movement.gd` handles movement and collision logic.
+   - **Scenes**: `player.tscn` (found in Player) and `game.tscn` (found in scenes).
+   - **Related Scripts**: `player.gd` (found in Player) handles movement and collision logic.
 
 2. **Enemies**
 The enemies can follow you around and attack and kill you.
 Node Types - Spatial
    - **Testing**: Locate enemies in the game world and observe their behavior, such as following the player and attacking.
-   - **Scenes**: Found in `orc.tscn`, `skeleton.tscn`, and `slime.tscn` under the `enemies` folder.
-   - **Related Scripts**: Each enemy has its own script (e.g., `orc.gd`, `skeleton.gd`).
+   - **Scenes**: `orcWorking.tscn`, `skeleton.tscn`, and `slimeWorking.tscn` found in enemies/common. `dragonWorking.tscn` found in enemies/bosses.
+   - **Related Scripts**: `orc_2.gd`, `skeleton.gd`, and `slime_2.gd` found in enemies/common. `dragon_working.gd` found in enemies/bosses.
 
 3. **Tilemaps and Worldbuilding**
 There is a fully functional tilemap and there are enemies and npcs all around the map.
 Node Types - Spatial, Node
    - **Testing**: Explore the map to see the tile-based environment and interact with NPCs and objects.
-   - **Scenes**: Found in `game.tscn`.
-   - **Related Scripts**: No direct script; implemented via Godot's Tilemap system.
+   - **Scenes**: There are no scenesf as we just used TileMapLayers.
+   - **Related Scripts**: There is no script.
 
 5. **Inventory**
 In the inventory you can move around items and pick other items up.
