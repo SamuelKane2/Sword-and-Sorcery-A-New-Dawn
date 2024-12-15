@@ -1,0 +1,13 @@
+Completed Tasks:
+-Levi - Tilemap
+-Brenden - Built the actual world
+Jerry - Player character
+
+Roadblocks:
+-none
+
+Pivots:
+-none
+
+Concerns:
+-none
