@@ -1,9 +1,8 @@
 Completed Tasks:
--Whole group - The entire project planning
+
 
 Roadblocks:
--Levi - He was sick Tuesday to Friday which gives him 4 less days to work
-
+-Levi - He was sick Tuesday to Friday which gave him 4 less days to work
 
 Pivots:
 -We need to start taking track of who's doing what so that 
