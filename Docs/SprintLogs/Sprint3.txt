@@ -1,5 +1,5 @@
 Completed Tasks:
-
+Jerry - Enemies that work and follow the player
 
 Roadblocks:
 -Levi - He was sick Tuesday to Friday which gave him 4 less days to work
