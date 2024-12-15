@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://btc2htbtt6mje"]
+
+[ext_resource type="Script" path="res://enemies/bosses/dragon_working.gd" id="1_3by7k"]
+[ext_resource type="PackedScene" uid="uid://cf01iol0f3dnr" path="res://enemies/bosses/dragon.tscn" id="2_jhcmm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nj3k7"]
+radius = 100.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_teslv"]
+height = 20.0
+
+[node name="Dragon" type="CharacterBody2D" groups=["Enemy"]]
+script = ExtResource("1_3by7k")
+
+[node name="AnimatedSprite" parent="." instance=ExtResource("2_jhcmm")]
+frame = 3
+frame_progress = 0.889974
+offset = Vector2(0, -12)
+
+[node name="detection_range" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_range"]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_nj3k7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -12)
+shape = SubResource("CapsuleShape2D_teslv")
+
+[node name="AttackTimer" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="body_entered" from="detection_range" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="detection_range" to="." method="_on_detection_area_body_exited"]
+[connection signal="timeout" from="AttackTimer" to="." method="_on_AttackTimer_timeout"]
