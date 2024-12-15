@@ -3,10 +3,10 @@ Jerry - Enemies that work and follow the player
 Levi - User interface design
 
 Roadblocks:
--Levi - He was sick Tuesday to Friday which gave him 4 less days to work
+-Levi - He was sick Tuesday to Friday which gave him less time to work
 
 Pivots:
--We need to start taking track of who's doing what so that 
+-
 
 Concerns:
 -none
