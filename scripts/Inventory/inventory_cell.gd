@@ -1,11 +1,10 @@
 extends Button
 
 @onready var background_sprite: Sprite2D = $backgroundSprite
-@onready var center_container: CenterContainer = $CenterContainerte
+@onready var container: CenterContainer = $CenterContainerte
 
-#               : ItemStackGui
-var itemStackGui
+var itemStackGui: ItemStackGui
 
-func insert(isg):
+func insert(isg: ItemStackGui):
 	itemStackGui = isg
-	center_container.add_child(itemStackGui)
+	container.add_child(itemStackGui)
