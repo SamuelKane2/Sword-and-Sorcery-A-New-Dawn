@@ -1,0 +1,11 @@
+Completed Tasks:
+Brenden - Primitive dialogue
+
+Roadblocks:
+-none
+
+Pivots:
+-none
+
+Concerns:
+-none
