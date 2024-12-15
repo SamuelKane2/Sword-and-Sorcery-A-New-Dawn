@@ -23,36 +23,36 @@ spelling/grammar mistakes - 28
 There are many different uses of collisions used in the player scene.
 Node Types - Spatial, Node, and Canvasitem
    - **Testing**: Use the arrow keys or WASD to move the player character in the game.
-   - **Scenes**: `player.tscn` (found in Player) and `game.tscn` (found in scenes).
-   - **Related Scripts**: `player.gd` (found in Player) handles movement and collision logic.
+   - **Scenes**: `player.tscn` found in res://Player, and `game.tscn` (found in scenes).
+   - **Related Scripts**: `player.gd` found in res://Player, handles movement and collision logic.
 
 2. **Enemies**
 The enemies can follow you around and attack and kill you.
 Node Types - Spatial
    - **Testing**: Locate enemies in the game world and observe their behavior, such as following the player and attacking.
-   - **Scenes**: `orcWorking.tscn`, `skeleton.tscn`, and `slimeWorking.tscn` found in enemies/common. `dragonWorking.tscn` found in enemies/bosses.
-   - **Related Scripts**: `orc_2.gd`, `skeleton.gd`, and `slime_2.gd` found in enemies/common. `dragon_working.gd` found in enemies/bosses.
+   - **Scenes**: `orcWorking.tscn`, `skeleton.tscn`, and `slimeWorking.tscn` found in res://enemies/common. `dragonWorking.tscn` found in res://enemies/bosses.
+   - **Related Scripts**: `orc_2.gd`, `skeleton.gd`, and `slime_2.gd` found in res://enemies/common. `dragon_working.gd` found in res://enemies/bosses.
 
 3. **Tilemaps and Worldbuilding**
 There is a fully functional tilemap and there are enemies and npcs all around the map.
 Node Types - Spatial, Node
    - **Testing**: Explore the map to see the tile-based environment and interact with NPCs and objects.
-   - **Scenes**: There are no scenesf as we just used TileMapLayers.
+   - **Scenes**: There are no scenes as we just used TileMapLayers.
    - **Related Scripts**: There is no script.
 
 5. **Inventory**
 In the inventory you can move around items and pick other items up.
 Node Types - Spatial, Node, and Canvasitem
    - **Testing**: Open the inventory, move items around, and pick up items in the game world.
-   - **Scenes**: Found in `inventory.tscn` and `ui.tscn`.
-   - **Related Scripts**: `inventory.gd` and `ui.gd`.
+   - **Scenes**: `inventory.tscn`, `inventory_cell.tscn`, and `itemsStack.tscn`, found in res://scenes/Inventory. `ui.tscn` found in res://scripts.
+   - **Related Scripts**: `inventory.gd`, `collectable.gd`, `inventory_cell.gd`, `inventory_gui.gd`, `inventory_item`, and `item_stack_gui` found in res://scripts/Inventory. `ui.gd` found in res://scripts.
 
 7. **Dialogue**
 This dialogue allows you to talk with npcs and have conversations with them.
 Node Types - Spatial, Node, and Canvasitem
-   - **Testing**: Interact with NPCs and initiate conversations to see dialogue options.
-   - **Scenes**: Found in `npc.tscn` and `dialogue.tscn`.
-   - **Related Scripts**: `dialogue.gd` and `npc.gd`.
+   - **Testing**: Interact with NPCs and initiate conversations to see dialogue.
+   - **Scenes**: `NobleMan` found in .
+   - **Related Scripts**: `npc.gd` found in res://scripts.
 
 9. **GUI**
 This display allows the character see their health and gold.
