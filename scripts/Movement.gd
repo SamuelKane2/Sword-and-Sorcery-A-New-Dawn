@@ -116,14 +116,11 @@ func _on_Attack_body_entered(body):
 func _on_Attack_body_exited(body):
 	if body.is_in_group("Enemy"):
 		body.state = body.SURROUND
+		enemy_inattack_range = false
 
 func _on_hitbox_body_entered(body):
 	if body.is_in_group("Enemy"):
 		enemy_inattack_range = true
-
-func _on_hitbox_body_exited(body):
-	if body.is_in_group("Enemy"):
-		enemy_inattack_range = false
 
 func enemy_attack():
 	if enemy_inattack_range and enemy_attack_cooldown == true:
@@ -132,8 +129,10 @@ func enemy_attack():
 		$attack_cooldown.start()
 		print(health)
 
+
 func _on_attack_cooldown_timeout():
 	enemy_attack_cooldown = true
+
 
 func update_health():
 	var healthbar = $healthbar
