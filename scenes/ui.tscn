@@ -1,28 +1,29 @@
+
 [gd_scene load_steps=10 format=3 uid="uid://bjilp0s4s4fgp"]
 
-[ext_resource type="Script" path="res://scripts/ui.gd" id="1_328h3"]
-[ext_resource type="Texture2D" uid="uid://bjsmi1wrr2hgd" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/FG_Item_Icons.png" id="1_gnjjr"]
-[ext_resource type="Texture2D" uid="uid://c3xooveslabyj" path="res://assets/Misc Assets/Pixel Heart Sprite Sheet 16x16.png" id="3_irtck"]
-[ext_resource type="PackedScene" uid="uid://hl7uw8o2usin" path="res://scenes/Inventory/inventory.tscn" id="4_brnyl"]
-[ext_resource type="FontFile" uid="uid://bn163an3vjm8l" path="res://assets/Misc Assets/PixelOperator8.ttf" id="4_hqd86"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_o67o7"]
-atlas = ExtResource("3_irtck")
-region = Rect2(0, 80, 16, 16)
+[ext_resource type="Script" path="res://scripts/ui.gd" id="1_328h3"]
+[ext_resource type="Texture2D" uid="uid://d3g6bbyudqf45" path="res://assets/UI Assets/HUD/MONEY PANEL/Money Icon.png" id="1_umxgr"]
+[ext_resource type="Texture2D" uid="uid://c3xooveslabyj" path="res://assets/Misc Assets/Pixel Heart Sprite Sheet 16x16.png" id="2_qnp1j"]
+[ext_resource type="PackedScene" uid="uid://hl7uw8o2usin" path="res://scenes/Inventory/inventory.tscn" id="4_brnyl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uovse"]
+atlas = ExtResource("1_umxgr")
+region = Rect2(0, 0, 14, 14)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ju2t0"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_o67o7")
+"texture": SubResource("AtlasTexture_uovse")
 }],
 "loop": true,
-"name": &"default",
+"name": &"new_animation",
 "speed": 5.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xdbnm"]
-atlas = ExtResource("1_gnjjr")
+atlas = ExtResource("2_qnp1j")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mqwyk"]
@@ -58,7 +59,7 @@ offset_bottom = 48.0
 position = Vector2(21, 27)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_ju2t0")
-frame_progress = 0.547411
+animation = &"new_animation"
 
 [node name="HeartSprite" type="AnimatedSprite2D" parent="UI/Stats"]
 position = Vector2(154, 25)
@@ -71,7 +72,6 @@ offset_left = 179.0
 offset_top = 12.0
 offset_right = 235.0
 offset_bottom = 44.0
-theme_override_fonts/font = ExtResource("4_hqd86")
 theme_override_font_sizes/font_size = 32
 text = "20"
 
@@ -81,7 +81,6 @@ offset_left = 40.0
 offset_top = 11.0
 offset_right = 124.0
 offset_bottom = 43.0
-theme_override_fonts/font = ExtResource("4_hqd86")
 theme_override_font_sizes/font_size = 32
 text = "347"
 
@@ -96,6 +95,5 @@ offset_left = 179.0
 offset_top = 12.0
 offset_right = 235.0
 offset_bottom = 44.0
-theme_override_fonts/font = ExtResource("4_hqd86")
 theme_override_font_sizes/font_size = 32
 text = "20"

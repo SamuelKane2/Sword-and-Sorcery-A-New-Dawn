@@ -41,11 +41,11 @@ func _physics_process(_delta):
 			ATTACK:
 				move(player.global_position, _delta)  # Move towards the player
 				# Play attack animation if in attack state
-				$AnimatedSprite.play("attackSkeleton")
+				$AnimatedSprite.play("attackOrc")
 
 			HIT:
 				# If hit, stop movement and play the attack animation
-				$AnimatedSprite.play("attackSkeleton")  # Play attack animation
+				$AnimatedSprite.play("attackOrc")  # Play attack animation
 				move(player.global_position, _delta)  # Continue moving towards the player
 				# After hit, wait before going back to surround
 				if attack_timer.is_stopped():  # Check if the timer is not running (stopped)
@@ -53,7 +53,7 @@ func _physics_process(_delta):
 
 		# If state is not HIT or ATTACK, play the movement animation
 		if state != HIT and state != ATTACK:
-			$AnimatedSprite.play("movementSkeleton")
+			$AnimatedSprite.play("movementOrc")
 
 		# Flip the sprite based on the player's position
 		if player.position.x - position.x < 0:
@@ -62,8 +62,9 @@ func _physics_process(_delta):
 			$AnimatedSprite.flip_h = false
 	else:
 		# If player is not detected, stay idle and do not move
-		$AnimatedSprite.play("idleSkeleton")
+		$AnimatedSprite.play("idleOrc")
 		# No movement when player is not detected
+
 
 	# Handle the collision range detection enable/disable based on death state
 	if !dead:

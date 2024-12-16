@@ -1,0 +1,14 @@
+Completed Tasks:
+Jerry - Enemies that work and follow the player
+Levi - User interface design
+Josh - Character health
+
+Roadblocks:
+-Levi - He was sick Tuesday to Friday which gave him less time to work
+- Lots of merge conflicts which wasted time
+
+Pivots:
+-none
+
+Concerns:
+- Completing the project on time

@@ -1,0 +1,85 @@
+[gd_scene load_steps=11 format=3 uid="uid://b372g0t1p71t8"]
+
+[ext_resource type="Script" path="res://scripts/npc.gd" id="1_uc6on"]
+[ext_resource type="Texture2D" uid="uid://djtrh8g6xtraw" path="res://assets/MinifolksVillagers/MinifolksVillagers/Without Outline/MiniNobleMan.png" id="2_8hrlj"]
+[ext_resource type="PackedScene" uid="uid://xlgchhxkpfuq" path="res://Dialogue/dialogue.tscn" id="3_snn2l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yyb75"]
+atlas = ExtResource("2_8hrlj")
+region = Rect2(0, 0, 32, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_as0qk"]
+atlas = ExtResource("2_8hrlj")
+region = Rect2(32, 0, 32, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u21vm"]
+atlas = ExtResource("2_8hrlj")
+region = Rect2(64, 0, 32, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vcqs6"]
+atlas = ExtResource("2_8hrlj")
+region = Rect2(96, 0, 32, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dyauj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yyb75")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_as0qk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u21vm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vcqs6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sqwpo"]
+radius = 5.09902
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ou2lh"]
+radius = 18.0
+
+[node name="Noble_Man" type="CharacterBody2D"]
+script = ExtResource("1_uc6on")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -5)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_dyauj")
+frame_progress = 0.212874
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_sqwpo")
+
+[node name="chat_detection_area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chat_detection_area"]
+shape = SubResource("CircleShape2D_ou2lh")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Dialogue" parent="." instance=ExtResource("3_snn2l")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 35.0
+offset_top = 2.0
+offset_right = 35.0
+offset_bottom = 2.0
+grow_horizontal = 1
+grow_vertical = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="chat_detection_area" to="." method="_on_chat_detection_area_body_entered"]
+[connection signal="body_exited" from="chat_detection_area" to="." method="_on_chat_detection_area_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="dialogue_finished" from="Dialogue" to="." method="_on_dialogue_dialogue_finished"]

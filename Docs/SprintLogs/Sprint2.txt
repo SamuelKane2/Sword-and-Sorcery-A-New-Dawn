@@ -1,0 +1,13 @@
+Completed Tasks:
+-Levi - Tilemap
+-Brenden - Built the actual world
+Jerry - Player character
+
+Roadblocks:
+-Josh thought he was the only one developing the character, but Jerry already finished it.
+
+Pivots:
+-Make sure that everybody knows that everybody else is doing so that we don't have two people developing the character at the same time, which wastes time. So, better team communication
+
+Concerns:
+- Getting the project fully completed: We are a little behind, we should've already finished the inventory and enemies attacking and moving.

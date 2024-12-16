@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://dr7erkccdf86f"]
+
+[ext_resource type="Script" path="res://scripts/npc.gd" id="1_cl5t3"]
+[ext_resource type="Texture2D" uid="uid://bjp4yea1j7ncl" path="res://assets/MinifolksVillagers/MinifolksVillagers/Without Outline/MiniQueen.png" id="1_jbmqr"]
+[ext_resource type="PackedScene" uid="uid://xlgchhxkpfuq" path="res://Dialogue/dialogue.tscn" id="2_7eup7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wyiv"]
+atlas = ExtResource("1_jbmqr")
+region = Rect2(0, 0, 38, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yth7j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2wyiv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jqm74"]
+radius = 12.0416
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y35l5"]
+radius = 43.4166
+
+[node name="Queen" type="CharacterBody2D"]
+script = ExtResource("1_cl5t3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4, -10)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_yth7j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_jqm74")
+
+[node name="chat_detection_zone" type="Area2D" parent="."]
+position = Vector2(-2, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chat_detection_zone"]
+shape = SubResource("CircleShape2D_y35l5")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Dialogue" parent="." instance=ExtResource("2_7eup7")]
+offset_left = 28.0
+offset_top = -27.0
+offset_right = 28.0
+offset_bottom = -27.0
+
+[connection signal="dialogue_finished" from="Dialogue" to="Dialogue" method="_on_dialogue_finished"]
