@@ -4,7 +4,7 @@ class_name ItemStackGui
 
 @onready var itemSprite: Sprite2D = $itemSprite
 
-#                : InventorySlot
+#                : inventory_cell
 var inventorySlot
 
 func update():

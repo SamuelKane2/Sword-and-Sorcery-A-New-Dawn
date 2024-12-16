@@ -30,7 +30,7 @@ func update():
 
 		if !inventorySlot.item: continue
 		
-		var itemStack: ItemStackGui = slots.itemStack
+		var itemStack = slots.itemStack
 		if !itemStack:
 			itemStack = ItemStackClass.instantiate()
 			slots[i].inster(itemStack)
