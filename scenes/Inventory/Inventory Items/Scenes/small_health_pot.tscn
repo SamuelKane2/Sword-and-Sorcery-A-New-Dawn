@@ -9,7 +9,6 @@ resource_local_to_scene = true
 size = Vector2(4, 10)
 
 [node name="Small_Health_Pot" instance=ExtResource("1_0wqhk")]
-scale = Vector2(1.5, 1.5)
 itemRes = ExtResource("2_3a15f")
 
 [node name="CollisionShape2D" parent="." index="0"]

@@ -35,7 +35,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[node name="UI" type="CanvasLayer"]
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 3
@@ -50,7 +50,7 @@ script = ExtResource("1_328h3")
 layout_mode = 0
 offset_left = -3.0
 offset_top = -3.0
-offset_right = 241.0
+offset_right = 112.0
 offset_bottom = 48.0
 
 [node name="CoinSprite" type="AnimatedSprite2D" parent="UI/Stats"]
@@ -60,11 +60,13 @@ sprite_frames = SubResource("SpriteFrames_ju2t0")
 animation = &"new_animation"
 
 [node name="HeartSprite" type="AnimatedSprite2D" parent="UI/Stats"]
+visible = false
 position = Vector2(154, 25)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_mqwyk")
 
 [node name="HeartCounter" type="Label" parent="UI/Stats"]
+visible = false
 layout_mode = 0
 offset_left = 179.0
 offset_top = 12.0
@@ -75,23 +77,27 @@ text = "20"
 
 [node name="CoinCounter" type="Label" parent="UI/Stats"]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 11.0
-offset_right = 124.0
-offset_bottom = 43.0
+offset_left = 50.0
+offset_top = 4.0
+offset_right = 134.0
+offset_bottom = 49.0
 theme_override_font_sizes/font_size = 32
 text = "347"
 
 [node name="Inventory" parent="UI" instance=ExtResource("4_brnyl")]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
+offset_right = -1152.0
+offset_bottom = -648.0
 
 [node name="Stats#CoinCounter" type="Label" parent="."]
 
 [node name="Stats#HeartCounter" type="Label" parent="."]
-offset_left = 179.0
-offset_top = 12.0
-offset_right = 235.0
-offset_bottom = 44.0
+visible = false
+offset_left = 182.0
+offset_top = 2.0
+offset_right = 238.0
+offset_bottom = 47.0
 theme_override_font_sizes/font_size = 32
 text = "20"

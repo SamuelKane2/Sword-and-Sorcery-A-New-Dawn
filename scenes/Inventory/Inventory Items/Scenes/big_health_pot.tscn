@@ -10,7 +10,6 @@ resource_local_to_scene = true
 size = Vector2(8, 11)
 
 [node name="Big_Health_Pot" instance=ExtResource("1_owril")]
-scale = Vector2(1.5, 1.5)
 script = ExtResource("2_tp4uc")
 itemRes = ExtResource("3_i3clt")
 

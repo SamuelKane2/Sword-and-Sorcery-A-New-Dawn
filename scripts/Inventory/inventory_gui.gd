@@ -45,12 +45,12 @@ var isOpen: bool = false
 func open():
 	visible = true
 	isOpen = true
-	get_tree().paused = true
+#	get_tree().paused = true
 	
 func close():
 	visible = false
 	isOpen = false
-	get_tree().paused = false
+#	get_tree().paused = false
 
 # Moving items within the inventory
 func onSlotClicked(slot):
