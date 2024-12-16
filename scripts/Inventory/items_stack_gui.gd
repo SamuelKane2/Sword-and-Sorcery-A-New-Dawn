@@ -1,10 +1,9 @@
 extends Panel
 
-class_name ItemStackGui
+class_name ItemStack
 
-@onready var itemSprite: Sprite2D = $itemSprite
+@onready var itemSprite: Sprite2D = $item
 
-#                : inventory_cell
 var inventorySlot
 
 func update():
