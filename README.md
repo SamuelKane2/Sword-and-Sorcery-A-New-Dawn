@@ -51,26 +51,26 @@ Node Types - Spatial, Node, and Canvasitem
 This dialogue allows you to talk with npcs and have conversations with them.
 Node Types - Spatial, Node, and Canvasitem
    - **Testing**: Interact with NPCs and initiate conversations to see dialogue.
-   - **Scenes**: `NobleMan` found in .
-   - **Related Scripts**: `npc.gd` found in res://scripts.
+   - **Scenes**: `dialogue.tscn` found in res://Dialogue.
+   - **Related Scripts**: `dialogueplayer.gd`, (not a script) `NobleMan_dialogue.json`, and `Old_Man_Dialogue.json` found in res://scripts.
 
 9. **GUI**
 This display allows the character see their health and gold.
 Node Types - Node, and Canvasitem
    - **Testing**: Monitor the health bar and currency display while playing.
-   - **Scenes**: Found in `ui.tscn`.
-   - **Related Scripts**: `ui.gd`.
+   - **Scenes**: `ui.tscn` found in res://scenes.
+   - **Related Scripts**: `ui.gd` found in res://scripts.
 
 11. **Combat**
-The player can fight the enemies and not just run away from them.
+We don't currently have combat.
 Node Types - Spatial, Node
    - **Testing**: Engage in combat with enemies by attacking and avoiding their attacks.
-   - **Scenes**: Found in `combat.tscn`.
-   - **Related Scripts**: `combat.gd`.
+   - **Scenes**: None.
+   - **Related Scripts**: None.
 
 ### Team Roles and Contributions
 - Josh: Started the player (until he realized Jerry created one) and fixed the Main after it was broken
 - Levi: Created the tilemap and inventory
 - Brenden: Created the actualy map, and the dialogue
-- Brayden: Started creating the enemies
+- Brayden: Started creating the enemies, and blacksmith
 - Jerry: Made the enemies work and created the entire player character
