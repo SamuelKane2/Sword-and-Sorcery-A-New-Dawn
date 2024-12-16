@@ -1,6 +1,7 @@
 [gd_scene load_steps=26 format=3 uid="uid://hl7uw8o2usin"]
 
 [ext_resource type="Script" path="res://scripts/Inventory/inventory_gui.gd" id="1_63v10"]
+
 [ext_resource type="Texture2D" uid="uid://csjjw66q7d5rg" path="res://assets/UI Assets/Loading Screen/Background.png" id="1_wg4ec"]
 [ext_resource type="PackedScene" uid="uid://b2mpevactb0b6" path="res://scenes/Inventory/inventory_cell.tscn" id="2_i7yqi"]
 [ext_resource type="Texture2D" uid="uid://dpmra2kld3se1" path="res://Player/player assets/tf_tallspritemz/characters/Actor1.png" id="4_vbmoq"]

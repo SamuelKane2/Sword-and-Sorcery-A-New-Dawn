@@ -1,9 +1,8 @@
 Asset Sources:
-
-
+We just used the assets that Mr. Lemke provided in his folder.
 
 Tutorials/References:
-
-
+Levi used this tutorial for the inventory - https://www.youtube.com/playlist?list=PLMQtM2GgbPEVuTgD4Ln17ombTg6EahSLr
 
 External Help:
+dd

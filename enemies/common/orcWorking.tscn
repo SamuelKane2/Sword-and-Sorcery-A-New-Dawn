@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://cgnuxh0l4l7gj"]
+
+[ext_resource type="Script" path="res://enemies/common/orc_2.gd" id="1_ekcsf"]
+[ext_resource type="PackedScene" uid="uid://dqa6biv5ae256" path="res://enemies/common/orc.tscn" id="2_0byov"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nj3k7"]
+radius = 77.0065
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_teslv"]
+radius = 8.0
+height = 18.0
+
+[node name="Orc" type="CharacterBody2D" groups=["Enemy"]]
+script = ExtResource("1_ekcsf")
+
+[node name="AnimatedSprite" parent="." instance=ExtResource("2_0byov")]
+offset = Vector2(0, -9)
+script = null
+
+[node name="detection_range" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_range"]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_nj3k7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6)
+shape = SubResource("CapsuleShape2D_teslv")
+
+[node name="AttackTimer" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="body_entered" from="detection_range" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="detection_range" to="." method="_on_detection_area_body_exited"]
+[connection signal="timeout" from="AttackTimer" to="." method="_on_AttackTimer_timeout"]

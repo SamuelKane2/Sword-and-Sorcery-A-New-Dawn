@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://ccpn6yapnvxeh"]
+
+[ext_resource type="Script" path="res://enemies/common/slime_2.gd" id="1_n55o5"]
+[ext_resource type="PackedScene" uid="uid://cv1u0o8ec1556" path="res://enemies/common/slime.tscn" id="2_wnl33"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nj3k7"]
+radius = 77.0065
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_teslv"]
+radius = 6.0
+height = 12.0
+
+[node name="Slime" type="CharacterBody2D" groups=["Enemy"]]
+script = ExtResource("1_n55o5")
+
+[node name="AnimatedSprite" parent="." instance=ExtResource("2_wnl33")]
+offset = Vector2(0, -11)
+script = null
+
+[node name="detection_range" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_range"]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_nj3k7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("CapsuleShape2D_teslv")
+
+[node name="AttackTimer" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="body_entered" from="detection_range" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="detection_range" to="." method="_on_detection_area_body_exited"]
+[connection signal="timeout" from="AttackTimer" to="." method="_on_AttackTimer_timeout"]
