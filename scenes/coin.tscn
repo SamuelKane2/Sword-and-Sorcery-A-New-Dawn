@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://26tk4ieodd1h"]
+
+[ext_resource type="Texture2D" uid="uid://d3g6bbyudqf45" path="res://assets/UI Assets/HUD/MONEY PANEL/Money Icon.png" id="1_8ko53"]
+[ext_resource type="Script" path="res://scripts/coin.gd" id="1_v52dn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_72cev"]
+radius = 18.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uovse"]
+atlas = ExtResource("1_8ko53")
+region = Rect2(0, 0, 14, 14)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ey2rn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uovse")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D"]
+scale = Vector2(0.33, 0.33)
+script = ExtResource("1_v52dn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.499998, 0.499998)
+shape = SubResource("CircleShape2D_72cev")
+
+[node name="CoinSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.5, 0.5)
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_ey2rn")
+animation = &"new_animation"

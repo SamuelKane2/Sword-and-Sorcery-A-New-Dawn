@@ -82,10 +82,9 @@ offset_top = 4.0
 offset_right = 134.0
 offset_bottom = 49.0
 theme_override_font_sizes/font_size = 32
-text = "347"
+text = "0"
 
 [node name="Inventory" parent="UI" instance=ExtResource("4_brnyl")]
-unique_name_in_owner = true
 visible = false
 layout_mode = 1
 offset_right = -1152.0

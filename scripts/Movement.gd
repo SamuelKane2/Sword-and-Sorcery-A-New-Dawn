@@ -153,11 +153,18 @@ func _on_regen_timer_timeout():
 
 # Player Inventory #
 @export var inventory: Inventory
+@onready var coin_label: Label = $UI/Stats/CoinCounter
+var coins = 0
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	print("Something")
 	if area.has_method("collect"):
 		area.collect(inventory)
+	if area.has_method("coin"):
+		print("coin")
+		coins += 1
+		area.coin()
+		coin_label = coins
 
 func _on_hitbox_area_entered(area: Area2D) -> void:
 	if area.has_method("collect"):

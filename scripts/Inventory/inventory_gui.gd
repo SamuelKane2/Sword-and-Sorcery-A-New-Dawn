@@ -1,6 +1,6 @@
 extends Control
 
-@onready var inventoryNode: Control = %Inventory
+@onready var inventoryNode: Control = $"."
 @onready var inventory: Inventory = preload("res://scenes/Inventory/Inventory Items/Resources/playerInventory.tres")
 @onready var ItemStackClass = preload("res://scenes/Inventory/itemsStack.tscn")
 @onready var main_inventory: GridContainer = $Inventory/MainInventory
