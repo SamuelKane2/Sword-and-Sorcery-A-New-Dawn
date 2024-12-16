@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://3uk76tvf4xca"]
 
-[ext_resource type="Script" path="res://scripts/inventory_item.gd" id="1_60124"]
+[ext_resource type="Script" path="res://scripts/Inventory/inventory_item.gd" id="1_60124"]
 [ext_resource type="Texture2D" uid="uid://cmmlk0dk31pi2" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/big_blue_pot.png" id="2_2pu48"]
 
 [resource]

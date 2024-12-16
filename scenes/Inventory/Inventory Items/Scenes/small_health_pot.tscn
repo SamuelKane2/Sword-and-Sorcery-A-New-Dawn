@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://cqwq5if117a4l"]
+
+[ext_resource type="PackedScene" uid="uid://df2v3xiuv181c" path="res://scenes/Inventory/Inventory Items/Scenes/collectable.tscn" id="1_0wqhk"]
+[ext_resource type="Resource" uid="uid://dvc3632ue7fkb" path="res://scenes/Inventory/Inventory Items/Resources/small_health_pot.tres" id="2_3a15f"]
+[ext_resource type="Texture2D" uid="uid://b77spdlfq6ihq" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/small_health_pot.png" id="2_sw5rj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_66ni4"]
+resource_local_to_scene = true
+size = Vector2(4, 10)
+
+[node name="Small_Health_Pot" instance=ExtResource("1_0wqhk")]
+scale = Vector2(1.5, 1.5)
+itemRes = ExtResource("2_3a15f")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("RectangleShape2D_66ni4")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_sw5rj")

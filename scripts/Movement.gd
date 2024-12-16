@@ -100,6 +100,13 @@ func animate() -> void:
 	# You can add debugging here to make sure blend_position is updating
 	#print("Blend Position: ", blend_position)
 
+# Player Inventory #
+@export var inventory: Inventory
+	
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	if area.has_method("collect"):
+		area.collect(inventory)
+
 func _on_Attract_body_entered(body):
 	if body.is_in_group("Enemy"):
 		body.attack_timer.start()

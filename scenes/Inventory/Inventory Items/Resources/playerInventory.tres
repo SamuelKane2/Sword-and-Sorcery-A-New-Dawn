@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Inventory" load_steps=6 format=3 uid="uid://bnu2h065ropgh"]
+
+[ext_resource type="Script" path="res://scripts/Inventory/inventory_item.gd" id="1_xbu4o"]
+[ext_resource type="Resource" uid="uid://bv3cj6ep8mc8r" path="res://scenes/Inventory/Inventory Items/Resources/small_blue_pot.tres" id="2_ouckw"]
+[ext_resource type="Resource" uid="uid://3uk76tvf4xca" path="res://scenes/Inventory/Inventory Items/Resources/big_blue_pot.tres" id="3_ejjnq"]
+[ext_resource type="Resource" uid="uid://dv4j8bo3rw4p4" path="res://scenes/Inventory/Inventory Items/Resources/sword.tres" id="4_fsrxb"]
+[ext_resource type="Script" path="res://scripts/Inventory/inventory.gd" id="5_f4ja5"]
+
+[resource]
+script = ExtResource("5_f4ja5")
+items = Array[ExtResource("1_xbu4o")]([null, null, ExtResource("2_ouckw"), null, null, null, null, null, null, null, null, ExtResource("3_ejjnq"), null, null, null, ExtResource("4_fsrxb"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://jnubme6eu0yr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6soue"]
+
+[node name="Panel" type="Panel"]
+theme_override_styles/panel = SubResource("StyleBoxFlat_6soue")
+
+[node name="itemSprite" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)

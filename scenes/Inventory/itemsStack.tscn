@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://1amo1ha58tlf"]
+
+[ext_resource type="Script" path="res://scripts/Inventory/items_stack_gui.gd" id="1_lg0m2"]
+
+[node name="ItemsStack" type="Panel"]
+script = ExtResource("1_lg0m2")
+
+[node name="itemSprite" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://btm4t73wfmrte"]
+
+[ext_resource type="PackedScene" uid="uid://df2v3xiuv181c" path="res://scenes/Inventory/Inventory Items/Scenes/collectable.tscn" id="1_k8m18"]
+[ext_resource type="Texture2D" uid="uid://ddsx3vuetcuhe" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Item Icons/sword_icon.png" id="2_b3s3e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bdv3w"]
+resource_local_to_scene = true
+size = Vector2(12, 12)
+
+[node name="Sword" instance=ExtResource("1_k8m18")]
+scale = Vector2(1.5, 1.5)
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("RectangleShape2D_bdv3w")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_b3s3e")
