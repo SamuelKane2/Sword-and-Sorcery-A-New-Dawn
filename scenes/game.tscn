@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ctle6qjilrjyy" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Village.png" id="2_hn4lr"]
 [ext_resource type="Texture2D" uid="uid://calbm1bilrgn6" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Village_Winter.png" id="3_5t03h"]
 [ext_resource type="Texture2D" uid="uid://cugem8e6v2kaa" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Extras.png" id="4_73n50"]
-[ext_resource type="PackedScene" uid="uid://bc6q1d5kf0hw3" path="res://scenes/ui.tscn" id="5_qfvc6"]
+[ext_resource type="PackedScene" uid="uid://bjilp0s4s4fgp" path="res://scenes/ui.tscn" id="5_qfvc6"]
 [ext_resource type="PackedScene" uid="uid://csc6dxriedco1" path="res://Player/Player.tscn" id="6_wo8ju"]
 [ext_resource type="PackedScene" uid="uid://cry0m666haeb" path="res://enemies/bosses/big_kinght.tscn" id="10_gxx1p"]
 [ext_resource type="PackedScene" uid="uid://c4xv8bi2kesg2" path="res://enemies/common/skeleton.tscn" id="12_cov0s"]

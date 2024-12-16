@@ -1,3 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://bb05a0x7rif0y"]
+
+[ext_resource type="Script" path="res://scripts/Menu.gd" id="1_uxjhr"]
+[ext_resource type="Texture2D" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/download (1).jpg" id="2_owhrb"]
 [gd_scene load_steps=3 format=3 uid="uid://hoyha78ucxy2"]
 
 [ext_resource type="Script" path="res://scripts/Menu.gd" id="1_uxjhr"]
