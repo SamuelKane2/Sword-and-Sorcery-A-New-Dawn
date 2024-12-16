@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://b8tjtkvec3v30"]
+
+[ext_resource type="Script" path="res://scripts/npc.gd" id="1_lxqd0"]
+[ext_resource type="Texture2D" uid="uid://cd43p2ky66dwb" path="res://assets/MinifolksVillagers/MinifolksVillagers/Without Outline/MiniOldMan.png" id="1_mqh53"]
+[ext_resource type="PackedScene" uid="uid://xlgchhxkpfuq" path="res://Dialogue/dialogue.tscn" id="2_24wtq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ff5qy"]
+atlas = ExtResource("1_mqh53")
+region = Rect2(0, 0, 38, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2vfie"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ff5qy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l2vb7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7rykm"]
+radius = 38.0
+
+[node name="Old_Man" type="CharacterBody2D"]
+script = ExtResource("1_lxqd0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(5, -11)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_2vfie")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_l2vb7")
+
+[node name="chat_detectoin_zone" type="Area2D" parent="."]
+position = Vector2(-2, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chat_detectoin_zone"]
+position = Vector2(2, -2)
+shape = SubResource("CircleShape2D_7rykm")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Dialogue" parent="." instance=ExtResource("2_24wtq")]
+offset_left = 32.0
+offset_top = -18.0
+offset_right = 32.0
+offset_bottom = -18.0
+
+[connection signal="dialogue_finished" from="Dialogue" to="Dialogue" method="_on_dialogue_finished"]
