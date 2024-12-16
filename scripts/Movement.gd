@@ -160,6 +160,5 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		area.collect(inventory)
 
 func _on_hitbox_area_entered(area: Area2D) -> void:
-	print("Something")
 	if area.has_method("collect"):
 		area.collect(inventory)
