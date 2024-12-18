@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://o7eewyk6wtga"]
+[gd_scene load_steps=31 format=4 uid="uid://o7eewyk6wtga"]
 
 [ext_resource type="Texture2D" uid="uid://bmgd68l7a0llg" path="res://Player/FG_Grounds.png" id="1_tqb0j"]
 [ext_resource type="Texture2D" uid="uid://ctle6qjilrjyy" path="res://assets/RPG CHARACTERS/Farm Game Village 2 Seasons/Tilesets/FG_Village.png" id="2_hn4lr"]
@@ -14,9 +14,10 @@
 [ext_resource type="PackedScene" uid="uid://cgnuxh0l4l7gj" path="res://enemies/common/orcWorking.tscn" id="12_iv1ir"]
 [ext_resource type="PackedScene" uid="uid://5r2wsqqx3dog" path="res://enemies/bosses/dragonWorking.tscn" id="13_c38e6"]
 [ext_resource type="PackedScene" uid="uid://ccpn6yapnvxeh" path="res://enemies/common/slimeWorking.tscn" id="13_qepxn"]
-[ext_resource type="PackedScene" uid="uid://b8tjtkvec3v30" path="res://scenes/old_man.tscn" id="14_asv64"]
-[ext_resource type="PackedScene" uid="uid://dr7erkccdf86f" path="res://scenes/queen.tscn" id="15_2jlky"]
+[ext_resource type="PackedScene" path="res://scenes/old_man.tscn" id="14_asv64"]
+[ext_resource type="PackedScene" path="res://scenes/queen.tscn" id="15_2jlky"]
 [ext_resource type="PackedScene" uid="uid://26tk4ieodd1h" path="res://scenes/coin.tscn" id="17_kcaeo"]
+[ext_resource type="PackedScene" path="res://scenes/npc.tscn" id="18_asatg"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_38k2m"]
 
@@ -2442,3 +2443,19 @@ position = Vector2(120, 56)
 
 [node name="Area2D2" parent="." instance=ExtResource("17_kcaeo")]
 position = Vector2(192, 64)
+
+[node name="Queen" parent="." instance=ExtResource("15_2jlky")]
+position = Vector2(1720, 448)
+
+[node name="Noble_Man" parent="." instance=ExtResource("18_asatg")]
+position = Vector2(1328, -600)
+
+[node name="Noble_Man2" parent="." instance=ExtResource("18_asatg")]
+position = Vector2(2288, -600)
+
+[connection signal="body_entered" from="Collectables/Big_Blue_Pot" to="Collectables/Big_Blue_Pot" method="_on_body_entered"]
+[connection signal="body_entered" from="Collectables/@Area2D@18524" to="Collectables/@Area2D@18524" method="_on_body_entered"]
+[connection signal="body_entered" from="Collectables/@Area2D@18525" to="Collectables/@Area2D@18525" method="_on_body_entered"]
+[connection signal="body_entered" from="Collectables/@Area2D@18529" to="Collectables/@Area2D@18529" method="_on_body_entered"]
+[connection signal="body_entered" from="Collectables/@Area2D@18530" to="Collectables/@Area2D@18530" method="_on_body_entered"]
+[connection signal="body_entered" from="Collectables/@Area2D@18531" to="Collectables/@Area2D@18531" method="_on_body_entered"]
